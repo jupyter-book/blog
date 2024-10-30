@@ -1,0 +1,32 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: 'Jupyter Book: Blog'
+  description: Team compass and documentation about governance for the Jupyter Book and MyST Markdown communities.
+  keywords:
+    - Jupyter
+    - JupyterBook
+    - MyST Markdown
+  github: https://github.com/jupyter-book/blog
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+  license: CC0-1.0
+  toc:
+    - file: index.md
+    - file: team.md
+    - file: governance.md
+    - file: tips.md
+    - file: contribute.md
+    - file: code-of-conduct.md
+site:
+  template: book-theme
+  nav: []
+  actions:
+    - title: Jupyter Book
+      url: https://jupyterbook.org
+    - title: MyST Markdown
+      url: https://mystmd.org
+  options:
+    favicon: images/favicon.png
+    logo: images/logo-wide.svg
+    logo_dark: images/logo-wide-dark.svg
+    logo_text: Team Compass
