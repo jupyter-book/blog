@@ -20,6 +20,21 @@ project:
       affiliations:
         - Jupyter Book
         - 2i2c
+    - name: Rowan Cockett
+      orcid: 0000-0002-7859-8394
+      affiliations:
+        - Jupyter Book
+        - Curvenote
+    - name: Franklin Koch
+      orcid: 0000-0002-6393-7058
+      affiliations:
+        - Jupyter Book
+        - Curvenote
+    - name: Steve Purves
+      orcid: 0000-0002-0760-5497
+      affiliations:
+        - Jupyter Book
+        - Curvenote
   references:
     jpy-gov: https://jupyter.org/governance/
   github: https://github.com/jupyter-book/blog
