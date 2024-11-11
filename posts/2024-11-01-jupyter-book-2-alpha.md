@@ -1,5 +1,5 @@
 ---
-title: Announcing Jupyter Book 2.0.0a0
+title: Announcing Jupyter Book 2 alpha
 subtitle: Rebuilt from the ground up for prettier PDFs, richer websites, and better tooling.
 date: 2024-11-11
 authors:
@@ -12,11 +12,11 @@ abbreviations:
 license: CC-BY-4.0
 ---
 
-Over the last ten months, the Jupyter Book team have been hard at work; Jupyter Book has become a Jupyter subproject (see https://github.com/jupyter/governance/pull/229), and the team[^jb-eb] [announced a plan][plan] for the release of Jupyter Book 2. A combined effort from the Jupyter Book and [Curvenote](https://curvenote.com/) teams has culminated in the alpha release of Jupyter Book 2.0, which has been re-written from the ground up to use the new MyST-MD engine.
+Over the last ten months, the Jupyter Book team have been hard at work; Jupyter Book has [become a Jupyter subproject](https://github.com/jupyter/governance/pull/229), and the team[^jb-eb] announced a [plan to release Jupyter Book 2][plan]. This post announces the **alpha release of Jupyter Book 2.0**, which has been re-written from the ground up to use the new MyST-MD engine.
 
 Over the next few months, we will work in preparation for the full release of Jupyter Book 2. Stay tuned for more!
 
-## New Features in `2.0.0a0`
+## New Features in `2.0 alpha`
 ### Rich Hover Previews
 Try hovering over [this tooltip about tooltips!](https://en.wikipedia.org/wiki/Tooltip). The new MyST book and article themes provide useful hover previews for links to other MyST content, Wikipedia, GitHub issues, and many more.
 
