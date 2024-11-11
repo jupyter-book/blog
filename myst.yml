@@ -1,5 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
+extends:
+  - https://raw.githubusercontent.com/jupyter-book/meta/refs/heads/main/myst.yml
 project:
   title: 'Jupyter Book: Blog'
   description: Updates from the Jupyter Book subproject.
@@ -12,16 +14,9 @@ project:
   license: CC0-1.0
   toc:
     - file: index.md
+    - title: Posts
+      children:
+        - pattern: posts/*.md
 site:
-  template: book-theme
-  nav: []
-  actions:
-    - title: Jupyter Book
-      url: https://jupyterbook.org
-    - title: MyST Markdown
-      url: https://mystmd.org
   options:
-    favicon: images/favicon.png
-    logo: images/logo-wide.svg
-    logo_dark: images/logo-wide-dark.svg
     logo_text: Blog
