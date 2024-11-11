@@ -2,11 +2,6 @@
 title: Jupyter Book Becomes a Jupyter Subproject
 subtitle: Jupyter Book joins the ranks of other Jupyter Subprojects such as JupyterLab and JupyterHub.
 date: 2024-11-11
-authors:
-  - name: Angus Hollands
-    orcid: 0000-0003-0788-3814
-    affiliations:
-      - Jupyter Book
 license: CC-BY-4.0
 ---
 
