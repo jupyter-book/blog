@@ -3,12 +3,40 @@ version: 1
 extends:
   - https://raw.githubusercontent.com/jupyter-book/meta/refs/heads/main/myst.yml
 project:
-  title: 'Jupyter Book: Blog'
+  title: "Jupyter Book: Blog"
   description: Updates from the Jupyter Book subproject.
   keywords:
     - Jupyter
     - JupyterBook
     - MyST Markdown
+  authors:
+    - name: Angus Hollands
+      orcid: 0000-0003-0788-3814
+      affiliations:
+        - Jupyter Book
+        - 2i2c
+    - name: Chris Holdgraf
+      orcid: 0000-0002-2391-0678
+      affiliations:
+        - Jupyter Book
+        - 2i2c
+    - name: Rowan Cockett
+      orcid: 0000-0002-7859-8394
+      affiliations:
+        - Jupyter Book
+        - Curvenote
+    - name: Franklin Koch
+      orcid: 0000-0002-6393-7058
+      affiliations:
+        - Jupyter Book
+        - Curvenote
+    - name: Steve Purves
+      orcid: 0000-0002-0760-5497
+      affiliations:
+        - Jupyter Book
+        - Curvenote
+  references:
+    jpy-gov: https://jupyter.org/governance/
   github: https://github.com/jupyter-book/blog
   # To autogenerate a Table of Contents, run "myst init --write-toc"
   license: CC0-1.0
