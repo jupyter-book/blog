@@ -15,6 +15,11 @@ project:
       affiliations:
         - Jupyter Book
         - 2i2c
+    - name: Chris Holdgraf
+      orcid: 0000-0002-2391-0678
+      affiliations:
+        - Jupyter Book
+        - 2i2c
   references:
     jpy-gov: https://jupyter.org/governance/
   github: https://github.com/jupyter-book/blog
