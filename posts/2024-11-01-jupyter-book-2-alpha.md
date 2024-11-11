@@ -1,5 +1,5 @@
 ---
-title: Announcing Jupyter Book 2 alpha
+title: Announcing the Jupyter Book 2 alpha
 subtitle: Rebuilt from the ground up for prettier PDFs, richer websites, and better tooling.
 date: 2024-11-11
 authors:
