@@ -1,7 +1,14 @@
 {
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Utilities for Jupyter Book blog",
+  "private": true,
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "glob": "^11.0.0",
     "myst-transforms": "^1.3.27",
     "mystmd": "^1.3.17"
   }
 }
+
