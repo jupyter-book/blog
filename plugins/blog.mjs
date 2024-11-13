@@ -11,7 +11,7 @@ const blogPostsDirective = {
   },
   run(data, vfile, ctx) {
     const size = data.options.limit ?? 3;
-    const paths = globSync("posts/*.md");
+    const paths = globSync("posts/*.md").sort(); // For now, string sort
     const nodes = paths.map((path) => {
       const ext = extname(path);
       const content = readFileSync(path, { encoding: "utf-8" });
