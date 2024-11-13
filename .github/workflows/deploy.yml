@@ -36,7 +36,7 @@ jobs:
       - name: Install MyST Markdown
         run: npm install
       - name: Build HTML Assets
-        run: myst build --html
+        run: npx myst build --html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
