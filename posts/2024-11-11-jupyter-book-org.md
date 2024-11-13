@@ -1,7 +1,7 @@
 ---
 title: Jupyter Book Becomes a Jupyter Subproject
 subtitle: Jupyter Book joins the ranks of other Jupyter Subprojects such as JupyterLab and JupyterHub.
-date: 2024-11-11
+date: "2024-11-11"
 license: CC-BY-4.0
 ---
 
