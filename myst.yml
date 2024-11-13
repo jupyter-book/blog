@@ -5,6 +5,8 @@ extends:
 project:
   title: "Jupyter Book: Blog"
   description: Updates from the Jupyter Book subproject.
+  plugins:
+    - plugins/blog.mjs
   keywords:
     - Jupyter
     - JupyterBook
@@ -42,9 +44,10 @@ project:
   license: CC0-1.0
   toc:
     - file: index.md
-    - title: Posts
+    - title: "2024"
       children:
-        - pattern: posts/*.md
+        - pattern: posts/2024-*.md
 site:
   options:
     logo_text: Blog
+    folders: true
