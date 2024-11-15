@@ -53,7 +53,7 @@ const blogPostsDirective = {
           ...descriptionItems,
           ...footerItems,
         ],
-        url: `/${name}`,
+        url: `/${path.toString().slice(0, -ext.length)}`,
       };
     });
     return Array.from(nodes).slice(0, size);
