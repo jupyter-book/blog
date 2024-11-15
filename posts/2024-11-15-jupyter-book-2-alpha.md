@@ -9,7 +9,9 @@ license: CC-BY-4.0
 
 Over the last ten months, the Jupyter Book team have been hard at work; Jupyter Book has [become a Jupyter subproject](https://github.com/jupyter/governance/pull/229), and the team[^jb-eb] announced a [plan to release Jupyter Book 2][plan]. This post announces the **alpha release of Jupyter Book 2.0**, which has been re-written from the ground up to use the new MyST-MD engine.
 
-Over the next few months, we will work in preparation for the full release of Jupyter Book 2. Stay tuned for more!
+Over the next few months, we will work in preparation for the full release of Jupyter Book 2. Stay tuned for more! The initial documentation for the alpha release can be found at:
+
+<https://next.jupyterbook.org/>
 
 ## Install the Jupyter Book 2 Alpha
 
@@ -92,7 +94,7 @@ Client-side search uses simple, modern, [Algolia](https://algolia.com)-inspired 
 
 ### High Quality PDFs
 
-PDF documents can now be built with Typst, a high-quality typesetting engine that produces readable error messages and beautiful documents.
+PDF documents can now be built with Typst, a high-quality typesetting engine that produces readable error messages and beautiful documents. This feature was the basis for the 2024 [SciPy proceedings][proceedings], which is now built on MyST Markdown and will be accepting Jupyter Notebooks in 2025.
 
 :::{figure} https://raw.githubusercontent.com/rowanc1/LaPreprint/68f5ccbf1e1e26819149bcea1d547dfdfc5ceecd/example/files/screenshot.png
 
@@ -117,6 +119,7 @@ In the beta release, Jupyter Book 2 will once-again be able to show and hide con
 
 At this early stage, the new Jupyter Book application `jupyter book` behaves identically to the `mystmd` engine that it is built upon; as outlined in [our Jupyter Book 2 plan][plan], we intend for Jupyter Book to be an "opinionated distribution" of `mystmd` that shares the same configuration format and CLI. This contrasts with Jupyter Book 1, which was built on top of the Sphinx documentation engine, but offered its own CLI and configuration files. In future, the `jupyter book` and `mystmd` CLIs may diverge from one another, but we expect that this will be handled in a graceful manner: `mystmd` commands should always be compatible with the `jupyter book` application.
 
+[proceedings]: https://proceedings.scipy.org
 [plan]: https://executablebooks.org/en/latest/blog/2024-05-20-jupyter-book-myst/
 
 [^jb-eb]: Jupyter Book project has historically been a _technical_ project of the Executable Books organisation. In 2024, the establishment of a Jupyter subproject means that the Jupyter Book project now has its own identity outside of Executable Books.
