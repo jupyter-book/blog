@@ -28,17 +28,8 @@ const blogPostsDirective = {
         ? [
             {
               type: "footer",
-              children: [
-                {
-                  type: "paragraph",
-                  children: [
-                    {
-                      type: "text",
-                      value: `Date: ${frontmatter.date}`,
-                    },
-                  ],
-                },
-              ],
+              // Pull out the first child of `root` node.
+              children: [ctx.parseMyst(`**Date**: ${frontmatter.date}`)["children"][0]],
             },
           ]
         : [];
