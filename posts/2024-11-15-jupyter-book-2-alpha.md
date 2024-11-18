@@ -98,7 +98,7 @@ PDF documents can now be built with Typst, a high-quality typesetting engine tha
 
 :::{figure} https://raw.githubusercontent.com/rowanc1/LaPreprint/68f5ccbf1e1e26819149bcea1d547dfdfc5ceecd/example/files/screenshot.png
 
-Example of the LaPrepreint Typst template for rendering PDFs from Jupyter Book (via the MyST Engine).
+Example of the LaPreprint Typst template for rendering PDFs from Jupyter Book (via the MyST Engine).
 :::
 
 ## Coming Soon in `2.0 beta`
