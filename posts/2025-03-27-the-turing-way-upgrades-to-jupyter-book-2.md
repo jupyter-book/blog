@@ -2,7 +2,7 @@
 title: The Turing Way upgrades to Jupyter Book 2
 subtitle: What we liked and learned, and what we’d like to see improved
 authors: Jim, Sarah, Danny
-date: "2025-03-27"
+date: 2025-02-27
 license: CC-BY-4.0
 ---
 
