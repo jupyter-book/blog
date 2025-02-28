@@ -3,8 +3,16 @@ title: The Turing Way upgrades to Jupyter Book 2
 subtitle: What we liked and learned, and what we’d like to see improved
 authors:
  - name: Jim Madge
+   github: JimMadge
  - name: Sarah Gibson
+   orcid: 0000-0003-0356-2765
+   github: sgibson91
  - name: Danny Garside
+   orcid: 0000-0002-4579-003X
+   github: da5nsy
+   roles:
+     - writing
+	 - review
 date: 2025-02-27
 license: CC-BY-4.0
 ---
