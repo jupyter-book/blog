@@ -45,6 +45,9 @@ project:
   license: CC0-1.0
   toc:
     - file: index.md
+    - title: "2025"
+      children:
+        - pattern: posts/2025-*.md
     - title: "2024"
       children:
         - pattern: posts/2024-*.md
