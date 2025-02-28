@@ -1,7 +1,10 @@
 ---
 title: The Turing Way upgrades to Jupyter Book 2
 subtitle: What we liked and learned, and what we’d like to see improved
-authors: Jim, Sarah, Danny
+authors:
+ - name: Jim Madge
+ - name: Sarah Gibson
+ - name: Danny Garside
 date: 2025-02-27
 license: CC-BY-4.0
 ---
