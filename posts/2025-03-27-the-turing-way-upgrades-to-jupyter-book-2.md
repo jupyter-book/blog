@@ -36,7 +36,7 @@ The Turing Way team shared a few things that they are particularly excited about
 Here are a few tips from The Turing Way team for handling the migration effectively and working with the Jupyter Book community.
 
 * **Take it one step at a time.** The initial migration introduced a number of errors and warnings. The errors had to be solved for the book to build, but we decided to accept many of the warnings for now, and fix them later. That way, we can start using JB2 immediately. We realised that waiting until we had fixed all warnings would be painful as ongoing development on the book would reintroduce warnings as we merge to keep up to date with the main branch.  
-* **Reach out to the JB2 team\!** We have worked together with JB2 and MyST contributors and found them to be incredibly enthusiastic and helpful. We found some bugs while migrating *The Turing Way*, and every time the JB2 team were swift to make a fix or find a workaround. It felt great to have this support, and moreover we felt welcomed as contributors and collaborators. It’s brilliant to know that we helped to make improvements everyone can benefit from in the future.
+* **Reach out to the JB2 team\!** We have worked together with JB2 and MyST contributors and found them to be incredibly enthusiastic and helpful. We found some bugs while migrating The Turing Way, and every time the JB2 team were swift to make a fix or find a workaround. It felt great to have this support, and moreover we felt welcomed as contributors and collaborators. It’s brilliant to know that we helped to make improvements everyone can benefit from in the future.
 
 ## What we’re looking forward to
 
