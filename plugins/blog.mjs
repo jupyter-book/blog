@@ -2,6 +2,8 @@ import { globSync } from "glob";
 import { readFileSync } from "node:fs";
 import { extname, basename } from "node:path";
 import { getFrontmatter } from "myst-transforms";
+import { validatePageFrontmatter } from "myst-frontmatter";
+import { fileError, fileWarn } from "myst-common";
 
 const blogPostsDirective = {
   name: "blog-posts",
@@ -14,10 +16,27 @@ const blogPostsDirective = {
     const paths = globSync("posts/*.md").sort().reverse(); // For now, string sort
     const nodes = paths.map((path) => {
       const ext = extname(path);
-      const name = basename(path, ext)
+      const name = basename(path, ext);
       const content = readFileSync(path, { encoding: "utf-8" });
       const ast = ctx.parseMyst(content);
-      const frontmatter = getFrontmatter(vfile, ast).frontmatter;
+      const frontmatter = validatePageFrontmatter(
+        getFrontmatter(vfile, ast).frontmatter,
+        {
+          property: "frontmatter",
+          file: vfile.path,
+          messages: {},
+          errorLogFn: (message) => {
+            fileError(vfile, message, {
+              ruleId: RuleId.validPageFrontmatter,
+            });
+          },
+          warningLogFn: (message) => {
+            fileWarn(vfile, message, {
+              ruleId: RuleId.validPageFrontmatter,
+            });
+          },
+        },
+      );
       const descriptionItems = frontmatter.description
         ? ctx.parseMyst(frontmatter.description).children
         : [];
@@ -29,7 +48,9 @@ const blogPostsDirective = {
             {
               type: "footer",
               // Pull out the first child of `root` node.
-              children: [ctx.parseMyst(`**Date**: ${frontmatter.date}`)["children"][0]],
+              children: [
+                ctx.parseMyst(`**Date**: ${frontmatter.date}`)["children"][0],
+              ],
             },
           ]
         : [];
