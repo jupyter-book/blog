@@ -5,6 +5,9 @@ date: "2024-11-15"
 abbreviations:
   CLI: command-line interface
 license: CC-BY-4.0
+authors:
+  - agoose77
+  - choldgraf
 ---
 
 Over the last ten months, the Jupyter Book team have been hard at work; Jupyter Book has [become a Jupyter subproject](https://github.com/jupyter/governance/pull/229), and the team[^jb-eb] announced a [plan to release Jupyter Book 2][plan]. This post announces the **alpha release of Jupyter Book 2.0**, which has been re-written from the ground up to use the new MyST-MD engine.

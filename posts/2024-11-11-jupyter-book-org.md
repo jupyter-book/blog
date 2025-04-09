@@ -3,6 +3,9 @@ title: Jupyter Book Becomes a Jupyter Subproject
 subtitle: Jupyter Book joins the ranks of other Jupyter Subprojects such as JupyterLab and JupyterHub.
 date: "2024-11-11"
 license: CC-BY-4.0
+authors:
+  - agoose77
+  - choldgraf
 ---
 
 Over the last ten months, the Jupyter Book team have been hard at work building the next major version of Jupyter Book (see the [blog post about using the MyST engine][plan]).
