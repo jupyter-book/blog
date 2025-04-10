@@ -1,5 +1,5 @@
 ---
-title: Jupyter Book joins the JupyterHub Collaboration Cafe
+title: Join the Jupyter Book team at a JupyterHub Collaboration Cafe
 subtitle: The JupyterHub team have graciously opened their space to the Jupyter Book community.
 date: 2025-04-09
 license: CC-BY-4.0
@@ -8,11 +8,18 @@ authors:
   - choldgraf
 ---
 
+If you'd like a chance to meet with the Jupyter Book team on a monthly basis, we're piloting an option for doing so! Jupyter Book is running an experiment to join the [JupyterHub Team](https://jupyterhub-team-compass.readthedocs.io) in monthly community meetings called **Collaboration Cafes**. This will be a way for Jupyter Book's community to connect with the Jupyter Book team, as well as the JupyterHub team.
+
+The meeting's format means that we'll be able to have Jupyter Book-specific conversations in parallel with the JupyterHub team. We are going to pilot this meeting style for a few months and see if it is valuable to our team and to the Jupyter Book community. As a small team, we can't _guarantee_ we will attend each meeting, but we'll do our best!
+
+Read below for more information about this meeting format.
+
 ## What is a Collaboration Cafe?
 
 A Collaboration Cafe is a virtual co-working space [pioneered by The Turing Way][ttw-cafe]. It provides a regular meeting space featuring breakout rooms and [pomodoro](wiki:Pomodoro_Technique) sprints that allows for visitors to collaborate with other attendees on topics that they find interesting. The goal of the format is to make it easy for first-time contributors to get involved, and provide a space for multiple conversations to happen efficiently in parallel.
 
 ## Who is welcome?
+
 We encourage _any_ Jupyter Book user with questions to join us. We aim to host conversations from "How do I do X in Jupyter Book" to "How can I add this feature to Jupyter Book?" in the same space. We're particularly keen to encourage anyone who has not engaged with us before to join and say hi!
 
 ## Why are we joining JupyterHub's Collaboration Cafe?
@@ -21,7 +28,7 @@ The Jupyter Book team are keen to provide a synchronous meeting space for our co
 
 ## When is it?
 
-The JupyterHub community operate [their own Collaboration Cafe][hub-cafe] with its own [calendar][hub-cal]. See @schedule for the latest schedule.
+The JupyterHub community operate [their own Collaboration Cafe][hub-cafe] with its own [calendar][hub-cal]. They alternate times each month to make it easier for our global community to make at least one meeting every two months. See @schedule for the latest schedule.
 
 ::::{figure}
 :label: schedule
