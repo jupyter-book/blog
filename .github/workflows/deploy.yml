@@ -34,9 +34,9 @@ jobs:
         with:
           node-version: 20.x
       - name: Install MyST Markdown
-        run: npm install
+        run: npm install -g mystmd
       - name: Build HTML Assets
-        run: npx myst build --html
+        run: myst build --html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

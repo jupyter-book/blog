@@ -6,7 +6,7 @@ project:
   title: "Jupyter Book: Blog"
   description: Updates from the Jupyter Book subproject.
   plugins:
-    - plugins/blog.mjs
+    - https://github.com/jupyter-book/blog-plugin/releases/latest/download/plugin.mjs
   keywords:
     - Jupyter
     - JupyterBook
