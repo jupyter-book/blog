@@ -28,11 +28,16 @@ The Jupyter Book team are keen to provide a synchronous meeting space for our co
 
 ## When is it?
 
-The JupyterHub community operate [their own Collaboration Cafe][hub-cafe] with its own [calendar][hub-cal]. They alternate times each month to make it easier for our global community to make at least one meeting every two months. See @schedule for the latest schedule.
+Each month, at alternating days and slightly different formats.
+
+- **Month A**: Tuesdays, shared with the [JupyterHub Collaboration Cafe][hub-cafe].
+- **Monthy B**: Wednesdays, with the Jupyter Book community.
+
+See @schedule for the Jupyter calendar, which includes the events described here as well as information for connecting.
 
 ::::{figure}
 :label: schedule
-:::{iframe} https://calendar.google.com/calendar/embed?src=aqpkui5q7oi32pk9tcp53hnssc%40group.calendar.google.com&ctz=America%2FLos_Angeles
+:::{iframe} https://calendar.google.com/calendar/embed?src=m3hek69dag7381umt8kcjd75u4%40group.calendar.google.com&ctz=America%2FChicago
 :::
 
 The meeting schedule for JupyterHub Collaboration Cafe
@@ -40,4 +45,4 @@ The meeting schedule for JupyterHub Collaboration Cafe
 
 [ttw-cafe]: https://book.the-turing-way.org/community-handbook/community-calls/community-calls-collabcafe
 [hub-cafe]: https://jupyterhub-team-compass.readthedocs.io/en/latest/meetings/collab-cafe/index.html
-[hub-cal]: https://jupyterhub-team-compass.readthedocs.io/en/latest/meetings/index.html#meetings-calendars
+[jupyter-cal]: https://jupyter.org/community#live-events
