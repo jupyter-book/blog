@@ -1,7 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 extends:
-  - https://raw.githubusercontent.com/jupyter-book/meta/refs/heads/main/myst.yml
+  - https://raw.githubusercontent.com/jupyter-book/jupyter-book/refs/heads/next/docs/site.yml
 project:
   title: "Jupyter Book: Blog"
   description: Updates from the Jupyter Book subproject.
