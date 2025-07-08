@@ -138,6 +138,9 @@ def main():
             f.write("tags:\n")
             f.write("  - release\n")
             f.write("---\n\n")
+            f.write(
+                f"{{button}}`Release Source <{release['html_url']}>`\n\n"
+            )
             f.write(body)
             f.write("\n")
 
