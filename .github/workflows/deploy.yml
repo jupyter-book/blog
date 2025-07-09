@@ -3,8 +3,11 @@
 name: MyST GitHub Pages Deploy
 on:
   push:
-    # Runs on pushes targeting the default branch
     branches: [main]
+  workflow_dispatch:
+  schedule:
+    # Runs every day at 1 AM Pacific Time
+    - cron: '0 8 * * *'
 env:
   # `BASE_URL` determines the website is served from, including CSS & JS assets
   # You may need to change this to `BASE_URL: ''`
