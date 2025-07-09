@@ -48,8 +48,13 @@ project:
   github: https://github.com/jupyter-book/blog
   # To autogenerate a Table of Contents, run "myst init --write-toc"
   license: CC0-1.0
+  exclude:
+    - posts/releases/README.md
   toc:
     - file: index.md
+    - title: Releases
+      children:
+        - pattern: posts/releases/*.md
     - title: "2025"
       children:
         - pattern: posts/2025-*.md

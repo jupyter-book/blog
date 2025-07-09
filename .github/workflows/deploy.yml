@@ -35,6 +35,14 @@ jobs:
           node-version: 20.x
       - name: Install MyST Markdown
         run: npm install -g mystmd
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Generate Release Notes from GitHub Releases
+        run: python src/generate_release_notes.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build HTML Assets
         run: myst build --html
       - name: Upload artifact
