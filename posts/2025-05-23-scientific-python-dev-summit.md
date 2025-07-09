@@ -18,7 +18,7 @@ Scientific Python is an ecosystem of open-source software packages and a communi
 
 This month, the organizers of the 2025 Scientific Python Developer Summit invited to the Jupyter Book team to join them in Seattle, Washington, where Chris Holdgraf, Franklin Koch, and Angus Hollands spent five days talking about the Jupyter Book project and its role in the Scientific Python ecosystem.
 
-:::{figure} https://media.licdn.com/dms/image/v2/D5622AQHNDxlvGlmvpQ/feedshare-shrink_800/B56ZbqLE4EHUA8-/0/1747685531808?e=1750896000&v=beta&t=EpsStwNocBZXPlgjBsNyBtubp3N7X04aC3jRQ8TrIyk
+:::{figure} https://private-user-images.githubusercontent.com/1839645/464285366-1c495267-e362-4380-b15c-acc9fc94eba8.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTIwNzc5ODcsIm5iZiI6MTc1MjA3NzY4NywicGF0aCI6Ii8xODM5NjQ1LzQ2NDI4NTM2Ni0xYzQ5NTI2Ny1lMzYyLTQzODAtYjE1Yy1hY2M5ZmM5NGViYTguanBlZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzA5VDE2MTQ0N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRjZjRmYTcwNzkxYzkwOWNlNmE4ZDU4ZDIxNDlhZTY3NThkMWU4OTgwZThjYjYwNWMyYTJjMjRiZDI0ZTc2MjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.MV0XsYsKqw4mmeqaNvwl0yZR8BiDg6WWmpo0ZIMxYKs
 
 Photograph of Angus and Franklin co-working with Scientific Python developers during the summit. Image redistributed from [a LinkedIn post shared by Scientific Python][post].
 :::

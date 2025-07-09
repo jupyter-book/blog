@@ -30,7 +30,7 @@ One-such community is [The Turing Way](https://book.the-turing-way.org/), who wr
 The Turing Way team shared a few things that they are particularly excited about with this upgrade. Here is what stood out:
 
 - **Ease of development and contribution.** Working with AST manipulation feels very powerful. MySTMD feels easier to build on and contribute to than Sphinx.
-- **Adding plugins and extensibility.** We are thinking of how we can build features that are important to us on top of JB2 and MyST. We are keen to make plugins that others could use, or to push changes upstream so everyone can benefit. A couple of early examples of this are [adding a warning for missing alt-text in figures](https://github.com/jupyter-book/mystmd/pull/1814) and [rewriting our pathways feature](#metadata) as a more generic “slices” or “sub ToC” plugin.
+- **Adding plugins and extensibility.** We are thinking of how we can build features that are important to us on top of JB2 and MyST. We are keen to make plugins that others could use, or to push changes upstream so everyone can benefit. A couple of early examples of this are [adding a warning for missing alt-text in figures](https://github.com/jupyter-book/mystmd/pull/1814) and rewriting our pathways feature as a more generic “slices” or “sub ToC” plugin.
 - **More powerful and simpler output formats.** More natural output to formats like PDF will give us new ways to share the book. PDF export of sections is a common request.
 
 ## Lessons we learned
