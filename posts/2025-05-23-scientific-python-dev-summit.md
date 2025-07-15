@@ -18,8 +18,7 @@ Scientific Python is an ecosystem of open-source software packages and a communi
 
 This month, the organizers of the 2025 Scientific Python Developer Summit invited to the Jupyter Book team to join them in Seattle, Washington, where Chris Holdgraf, Franklin Koch, and Angus Hollands spent five days talking about the Jupyter Book project and its role in the Scientific Python ecosystem.
 
-:::{figure} https://private-user-images.githubusercontent.com/1839645/464285366-1c495267-e362-4380-b15c-acc9fc94eba8.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTIwNzc5ODcsIm5iZiI6MTc1MjA3NzY4NywicGF0aCI6Ii8xODM5NjQ1LzQ2NDI4NTM2Ni0xYzQ5NTI2Ny1lMzYyLTQzODAtYjE1Yy1hY2M5ZmM5NGViYTguanBlZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzA5VDE2MTQ0N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRjZjRmYTcwNzkxYzkwOWNlNmE4ZDU4ZDIxNDlhZTY3NThkMWU4OTgwZThjYjYwNWMyYTJjMjRiZDI0ZTc2MjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.MV0XsYsKqw4mmeqaNvwl0yZR8BiDg6WWmpo0ZIMxYKs
-
+:::{figure} https://github.com/user-attachments/assets/5ea3a695-d728-4818-9625-d88f0df97fce
 Photograph of Angus and Franklin co-working with Scientific Python developers during the summit. Image redistributed from [a LinkedIn post shared by Scientific Python][post].
 :::
 
@@ -39,9 +38,7 @@ At the start of the week, we set out our goals for the summit:
 
 Angus and Franklin gave a short on-the-fly talk on the Jupyter Book project, walking through the high-level design of the MyST Document Engine, and explaining how the MyST AST that it produces can be rendered with different MyST Renderers.
 
-:::{figure}
-![](https://hackmd.io/_uploads/Sy1PtPobgl.jpg)
-
+:::{figure} https://github.com/user-attachments/assets/82578cd1-ecda-4739-9611-9431afe3367a
 Angus and Franklin talking with the Scientific Python Developer Summit attendees about the Jupyter Book project and the exciting new features in Jupyter Book 2.
 :::
 
