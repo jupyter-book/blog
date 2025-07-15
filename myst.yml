@@ -45,6 +45,7 @@ project:
   references:
     jpy-gov: https://jupyter.org/governance/
     guide: https://mystmd.org/guide
+    compass: https://compass.jupyterbook.org
   github: https://github.com/jupyter-book/blog
   # To autogenerate a Table of Contents, run "myst init --write-toc"
   license: CC0-1.0

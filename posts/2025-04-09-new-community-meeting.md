@@ -33,16 +33,11 @@ Each month, at alternating days and slightly different formats.
 - **Month A**: Tuesdays, shared with the [JupyterHub Collaboration Cafe][hub-cafe].
 - **Monthy B**: Wednesdays, with the Jupyter Book community.
 
-See @schedule for the Jupyter calendar, which includes the events described here as well as information for connecting.
+See below for links to the various community contact points, which includes the events described here as well as information for connecting.
 
-::::{figure}
-:label: schedule
-:::{iframe} https://calendar.google.com/calendar/embed?src=m3hek69dag7381umt8kcjd75u4%40group.calendar.google.com&ctz=America%2FChicago
-:::
+:::{embed} xref:compass/contribute#where-to-talk
 
-The meeting schedule for JupyterHub Collaboration Cafe
 ::::
 
 [ttw-cafe]: https://book.the-turing-way.org/community-handbook/community-calls/community-calls-collabcafe
 [hub-cafe]: https://jupyterhub-team-compass.readthedocs.io/en/latest/meetings/collab-cafe/index.html
-[jupyter-cal]: https://jupyter.org/community#live-events
