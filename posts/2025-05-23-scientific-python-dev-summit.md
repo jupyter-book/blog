@@ -18,8 +18,7 @@ Scientific Python is an ecosystem of open-source software packages and a communi
 
 This month, the organizers of the 2025 Scientific Python Developer Summit invited to the Jupyter Book team to join them in Seattle, Washington, where Chris Holdgraf, Franklin Koch, and Angus Hollands spent five days talking about the Jupyter Book project and its role in the Scientific Python ecosystem.
 
-:::{figure} https://github.com/user-attachments/assets/82578cd1-ecda-4739-9611-9431afe3367a
-
+:::{figure} https://github.com/user-attachments/assets/5ea3a695-d728-4818-9625-d88f0df97fce
 Photograph of Angus and Franklin co-working with Scientific Python developers during the summit. Image redistributed from [a LinkedIn post shared by Scientific Python][post].
 :::
 
@@ -39,7 +38,7 @@ At the start of the week, we set out our goals for the summit:
 
 Angus and Franklin gave a short on-the-fly talk on the Jupyter Book project, walking through the high-level design of the MyST Document Engine, and explaining how the MyST AST that it produces can be rendered with different MyST Renderers.
 
-:::{figure} https://github.com/user-attachments/assets/5ea3a695-d728-4818-9625-d88f0df97fce
+:::{figure} https://github.com/user-attachments/assets/82578cd1-ecda-4739-9611-9431afe3367a
 Angus and Franklin talking with the Scientific Python Developer Summit attendees about the Jupyter Book project and the exciting new features in Jupyter Book 2.
 :::
 
