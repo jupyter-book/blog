@@ -12,6 +12,9 @@ project:
     - JupyterBook
     - MyST Markdown
   contributors:
+    - id: jb-team
+      name: The Jupyter Book Team
+      url: https://compass.jupyterbook.org/team
     - id: agoose77
       name: Angus Hollands
       orcid: 0000-0003-0788-3814
