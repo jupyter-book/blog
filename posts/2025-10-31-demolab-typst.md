@@ -6,7 +6,7 @@ authors:
   - Jupyter Book Team
 ---
 
-The [TU Delft Demonstration Laboratory](https://contemporary-physicslab.github.io/Demolab/) team built an impressive 850+ page book documenting over 250 physics demonstrations using the [MyST Document Engine](xref:guide) and the new [plain_typst_book template](https://myst-templates.github.io/plain_typst_book/). The book serves multiple practical needs: plagiarism scanning, copyright checking, and providing a high-quality PDF alongside their website.
+The [TU Delft Demonstration Laboratory](https://contemporary-physicslab.github.io/Demolab/) team built an impressive 850+ page book documenting over 250 physics demonstrations using the [MyST Document Engine](xref:guide) and the new [plain_typst_book template](https://myst-templates.github.io/plain_typst_book/). The pdf serves multiple practical needs: plagiarism scanning, copyright checking, and providing a high-quality PDF alongside their website for reading (which is a common best-practice for multi-page websites).
 
 ![Cover of the Demolab physics book](../media/demolab-cover.jpg)
 
