@@ -11,9 +11,9 @@ Last night, we [released Jupyter Book 2](https://github.com/jupyter-book/jupyter
 It also means that many Jupyter Books out there are now broken! In particular, users who haven't pinned their Jupyter Book versions to the `1.x` series will likely have an unexpected surprise. Users can pin their version of Jupyter Book with commands like so:
 
 ```shell
-$ pip install jupyter-book<2
+$ pip install "jupyter-book<2"
 OR
-$ pip install jupyter-book~=1
+$ pip install "jupyter-book~=1"
 ```
 
 However we know that many people do not do this in practice.
@@ -38,7 +38,7 @@ The simplest thing that you could do is to simply _downgrade to Jupyter Book 1_.
 It is still available, and you can downgrade from the command-line like so:
 
 ```shell
-$ pip install jupyter-book<2
+$ pip install "jupyter-book<2"
 ```
 
 Or via a file like `requirements.txt` like so:
