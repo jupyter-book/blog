@@ -1,3 +1,6 @@
+# Dev
+__pycache__
+
 # MyST build outputs
 _build
 node_modules
