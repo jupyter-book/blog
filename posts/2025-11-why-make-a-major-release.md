@@ -6,7 +6,7 @@ authors:
   - Jupyter Book Team
 ---
 
-Last night, we [released Jupyter Book 2](https://github.com/jupyter-book/jupyter-book/releases/tag/v2.0.0). This is a major release that introduces the [MyST Document Engine](https://mystmd.org) as the back-end infrastructure that powers Jupyter Book.
+Last night, we [released Jupyter Book 2](https://github.com/jupyter-book/jupyter-book/releases/tag/v2.0.0). This is a major release that introduces the [MyST Document Engine](https://mystmd.org) as the back-end infrastructure that powers Jupyter Book. The alpha and beta versions of this release have been in progress since November 2024, and it represents a huge amount of work from the team and community that we are incredibly excited about.
 
 It also means that many Jupyter Books out there are now broken! In particular, users who haven't pinned their Jupyter Book versions to the `1.x` series will likely have an unexpected surprise. Users can make sure their version of Jupyter Book is compatible with the 1.x series with using commands like:
 
