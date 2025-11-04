@@ -8,13 +8,12 @@ authors:
 
 Last night, we [released Jupyter Book 2](https://github.com/jupyter-book/jupyter-book/releases/tag/v2.0.0). This is a major release that introduces the [MyST Document Engine](https://mystmd.org) as the back-end infrastructure that powers Jupyter Book.
 
-It also means that many Jupyter Books out there are now broken! In particular, users who haven't pinned their Jupyter Book versions to the `1.x` series will likely have an unexpected surprise. Users can pin their version of Jupyter Book with commands like so:
+It also means that many Jupyter Books out there are now broken! In particular, users who haven't pinned their Jupyter Book versions to the `1.x` series will likely have an unexpected surprise. Users can make sure their version of Jupyter Book is compatible with the 1.x series with using commands like:
 
 ```shell
 $ pip install "jupyter-book<2"
 OR
 $ pip install "jupyter-book~=1"
-```
 
 However we know that many people do not do this in practice.
 
