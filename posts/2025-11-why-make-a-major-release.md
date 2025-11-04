@@ -15,7 +15,7 @@ $ pip install "jupyter-book<2"
 OR
 $ pip install "jupyter-book~=1"
 
-However we know that many people do not do this in practice.
+However we know that many people do not pin versions in practice.
 
 ## Why we didn't create an entirely new package
 
