@@ -51,7 +51,7 @@ This will keep the previous version of Jupyter Book installed.
 
 ### Use the upgrade guide and helper
 
-We've also created an [upgrade guide for Jupyter Book 1](xref:jb#upgrade-tldr) to help people navigate their upgrade path. This includes guides to translate "old" configuration (`_config.yml`) to "new" configuration (`myst.yml`) and several paper-cuts along the way.
+We've also created an [upgrade guide for Jupyter Book 1](xref:jb#upgrade-tldr) to help people navigate their upgrade path. This includes guides to translate "old" configuration (`_config.yml`) to "new" configuration (`myst.yml`) and documents some potential paper-cuts along the way.
 
 Bundled with this effort is an **auto-upgrade tool** that will try and do most of the hard work for you. If you run `jupyter book build` in a directory with "old style" configuration, it should prompt you to automatically upgrade your book's configuration.
 
