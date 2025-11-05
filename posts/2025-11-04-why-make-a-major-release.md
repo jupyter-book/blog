@@ -6,34 +6,61 @@ authors:
   - Jupyter Book Team
 ---
 
-Last night, we [released Jupyter Book 2](https://github.com/jupyter-book/jupyter-book/releases/tag/v2.0.0). This is a major release that introduces the [MyST Document Engine](https://mystmd.org) as the back-end infrastructure that powers Jupyter Book. The alpha and beta versions of this release have been in progress since November 2024, and it represents a huge amount of work from the team and community that we are incredibly excited about.
+Last night, we [released Jupyter Book 2](https://github.com/jupyter-book/jupyter-book/releases/tag/v2.0.0).
+This is a major release that introduces the [MyST Document Engine](https://mystmd.org) as the back-end infrastructure that powers Jupyter Book.
+The alpha and beta versions of this release have been in progress since November 2024, and it represents a huge amount of work from the team and community that we are incredibly excited about.
 
-It also means that many Jupyter Books out there are now broken! In particular, users who haven't pinned their Jupyter Book versions to the `1.x` series will likely have an unexpected surprise. Users can make sure their version of Jupyter Book is compatible with the 1.x series with using commands like:
+It also means that many Jupyter Books out there are now broken! 
+In particular, users who haven't pinned their Jupyter Book versions to the `1.x` series will likely have an unexpected surprise.
+
+Users can make sure their version of Jupyter Book is compatible with the 1.x series with using commands like:
 
 ```shell
 $ pip install "jupyter-book<2"
 OR
 $ pip install "jupyter-book~=1"
+```
 
 However we know that many people do not pin versions in practice.
 
 ## Why we didn't create an entirely new package
 
-We considered creating a new Python package to reflect this big switch - e.g., `pip install jupyter-book2`. This has been done before in the Python system, and is a way to strictly separate the two projects.
+We considered creating a new Python package to reflect this big switch - e.g., `pip install jupyter-book2`.
+This has been done before in the Python system, and is a way to strictly separate the two projects.
 
-However, we also feel that this introduces a lot of confusion for users, and introduces an unsustainable maintenance burden for developers. Maintaining two user-facing products simultaneously creates expectations that we can't meet, and dilutes the brand and product identity of the tool.
+However, having two codebases -- that are very different to each other -- can introduce a lot of confusion for users.
+Importantly, it also introduces an challenging maintenance burden for developers.
 
-For this reason, we opted to make a major release (`pip install jupyter-book`) instead of creating a new package (`pip install jupyter-book2`).
+We don't technically have to maintain both codebases: we could tell anyone coming to ask for help with Jupyter Book 1 that we aren't going to answer their questions.
+We like helping people though!
+Its tough to have to say no again and again over time.
+
+Additionally, having two user-facing products both called "jupyter-book" creates some confusion: community members and users can end up talking across each other without realising that there are two "jupyter book"-type things existing in parallel.
+
+We didn't all agree across the core team.
+We _all_ dislike the feeling that many of you will experience if your Jupyter Book 1 builds start to break.
+We're really proud of our MyST document engine and we want you to feel excited to adopt this new version of Juptyer Book.
+In our team conversations we recognised that looking at your CI fail and seeing all those :x:s will not fill you with joy.
+
+The counter to users having a highly stressful single _day_ is our maintainers having a slightly stressful _year_.
+We're all humans across this open source community.
+And we're imperfect, and trying to use our time most wisely.
+
+<!-- Can someone help me make this sentence emphasised? A pull out? or an admonition? -->
+Ultimately, the team decided to go with making this major release (`pip install jupyter-book`) instead of creating a new package (`pip install jupyter-book2`).
 
 ## What we're doing to help
 
 We know that this will result in hidden breakages in CI/CD and unexpected changes to user workflows.
-We are sorry about this! We know that it's a huge pain to have to update your infrastructure and debug unexpected changes. Here are recommended paths forward:
+We are sorry about this!
+We know that it's a huge pain to have to update your infrastructure and debug unexpected changes.
+
+Here are recommended paths forward:
 
 (downgrade-jb1)=
 ### Downgrade to Jupyter Book 1
 
-The simplest thing that you could do is to simply _downgrade to Jupyter Book 1_.
+The simplest thing that you could do is to simply [_downgrade to Jupyter Book 1_]().
 It is still available, and you can downgrade from the command-line like so:
 
 ```shell
@@ -51,17 +78,21 @@ This will keep the previous version of Jupyter Book installed.
 
 ### Use the upgrade guide and helper
 
-We've also created an [upgrade guide for Jupyter Book 1](xref:jb#upgrade-tldr) to help people navigate their upgrade path. This includes guides to translate "old" configuration (`_config.yml`) to "new" configuration (`myst.yml`) and documents some potential paper-cuts along the way.
+We've also created an [upgrade guide for Jupyter Book 1](xref:jb#upgrade-tldr) to help people navigate their upgrade path.
+This includes guides to translate "old" configuration (`_config.yml`) to "new" configuration (`myst.yml`) and documents some potential paper-cuts along the way.
 
-Bundled with this effort is an **auto-upgrade tool** that will try and do most of the hard work for you. If you run `jupyter book build` in a directory with "old style" configuration, it should prompt you to automatically upgrade your book's configuration.
+Bundled with this effort is an **auto-upgrade tool** that will try and do most of the hard work for you.
+If you run `jupyter book build` in a directory with "old style" configuration, it should prompt you to automatically upgrade your book's configuration.
 
-We hope that these reduce the burden on users in upgrading their books if they wish, but we want to re-iterate that users don't strictly need to upgrade! You can always [downgrade to Jupyter Book 1](#downgrade-jb1) and keep using that.
+We hope that these reduce the burden on users in upgrading their books if they wish!
+
+(And remember, you can always [downgrade to Jupyter Book 1](#downgrade-jb1) and keep using that.)
 
 ### Ask for support and guidance in our community channels
 
-Finally, we've set up a number of [community channels](jb:community) where users and project contributors can discuss with one another and ask questions. Here are a few dedicated spaces:
+Finally, we've set up a number of [community channels](jb:community) where users and project contributors can discuss with one another and ask questions.
 
-Here are a few helpful links if you'd like to learn more:
+Here are a few dedicated spaces:
 
 - [Our chat room](https://discord.mystmd.org/) is for quick conversations and synchronous questions.
 - [Our discussions forum](https://github.com/orgs/jupyter-book/discussions) is for all kinds of general questions.
@@ -71,4 +102,8 @@ The Jupyter Book team will be monitoring these channels for questions from folks
 
 ## Thanks for your support
 
-Thanks again for using Jupyter Book and being part of our community. We know that disruptions to your workflow are really annoying! We're sorry if this decision has made your day more difficult. We're confident this is the right decision, and are committed to helping, guiding, and learning with our community to make the transition as smooth as possible.
+Thanks again for using Jupyter Book and being part of our community.
+We know that disruptions to your workflow are really annoying! 
+We're sorry if this decision has made your day more difficult. 
+
+We are committed to helping, guiding, and learning with our community to make the transition as smooth as possible.
