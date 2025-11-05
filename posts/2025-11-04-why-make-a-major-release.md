@@ -35,7 +35,7 @@ Finally, we think that having two user-facing products both called "Jupyter Book
 
 As it goes in open source projects, we discussed the various transition pathways, in which some team members expressed reservations with the chosen path—being concerned about the burden the transition imposed. 
 
-However, we came to a consensus around taking that path, are all very enthusiastic about the new engine, and dedicated to helping our users adopt it successfully. 
+However, we came to a consensus to try that path—and are all very enthusiastic about the new engine, and dedicated to helping our users adopt it successfully. 
 
 
 ## What we're doing to help
