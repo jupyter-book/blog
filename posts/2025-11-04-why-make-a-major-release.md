@@ -10,10 +10,10 @@ Last night, we [released Jupyter Book 2](https://github.com/jupyter-book/jupyter
 This is a major release that introduces the [MyST Document Engine](https://mystmd.org) as the back-end infrastructure that powers Jupyter Book.
 The alpha and beta versions of this release have been in progress since November 2024, and it represents a huge amount of work from the team and community that we are incredibly excited about.
 
-It also means that many Jupyter Books out there are now broken! 
+Unfortunately, it also means that many Jupyter Books out there are now broken.
 In particular, users who haven't pinned their Jupyter Book versions to the `1.x` series will likely have an unexpected surprise.
 
-Users can make sure their version of Jupyter Book is compatible with the 1.x series with using commands like:
+Users can make sure their version of Jupyter Book is compatible with the 1.x series by using commands like:
 
 ```shell
 $ pip install "jupyter-book<2"
@@ -21,7 +21,6 @@ OR
 $ pip install "jupyter-book~=1"
 ```
 
-However we know that many people do not pin versions in practice.
 
 ## Why we didn't create an entirely new package
 
@@ -31,29 +30,18 @@ This has been done before in the Python system, and is a way to strictly separat
 However, having two codebases -- that are very different to each other -- can introduce a lot of confusion for users.
 Importantly, it also introduces an challenging maintenance burden for developers.
 
-We don't technically have to maintain both codebases: we could tell anyone coming to ask for help with Jupyter Book 1 that we aren't going to answer their questions.
-We like helping people though!
-Its tough to have to say no again and again over time.
 
-Additionally, having two user-facing products both called "jupyter-book" creates some confusion: community members and users can end up talking across each other without realising that there are two "jupyter book"-type things existing in parallel.
+Finally, we think that having two user-facing products both called "Jupyter Book" creates some confusion: community members and users can end up talking across each other without realising that there are two engines that exist in parallel.
 
-We didn't all agree across the core team.
-We _all_ dislike the feeling that many of you will experience if your Jupyter Book 1 builds start to break.
-We're really proud of our MyST document engine and we want you to feel excited to adopt this new version of Juptyer Book.
-In our team conversations we recognised that looking at your CI fail and seeing all those :x:s will not fill you with joy.
+As it goes in open source projects, we discussed the various transition pathways, and acknowledge that not all team members felt equally comfortable with the chosen path—being concerned about the burden the transition imposed. 
 
-The counter to users having a highly stressful single _day_ is our maintainers having a slightly stressful _year_.
-We're all humans across this open source community.
-And we're imperfect, and trying to use our time most wisely.
+However, we came to a consensus around taking that path, are all very enthusiastic about the new engine, and dedicated to helping our users adopt it successfully. 
 
-<!-- Can someone help me make this sentence emphasised? A pull out? or an admonition? -->
-Ultimately, the team decided to go with making this major release (`pip install jupyter-book`) instead of creating a new package (`pip install jupyter-book2`).
 
 ## What we're doing to help
 
 We know that this will result in hidden breakages in CI/CD and unexpected changes to user workflows.
-We are sorry about this!
-We know that it's a huge pain to have to update your infrastructure and debug unexpected changes.
+We apologize in advance!
 
 Here are recommended paths forward:
 
@@ -103,7 +91,7 @@ The Jupyter Book team will be monitoring these channels for questions from folks
 ## Thanks for your support
 
 Thanks again for using Jupyter Book and being part of our community.
-We know that disruptions to your workflow are really annoying! 
-We're sorry if this decision has made your day more difficult. 
+We know that disruptions to your workflow are really annoying,
+but we hope you will also find that the benefit of a brand new engine,
+built on modern technology, will outweigh the disruption. 
 
-We are committed to helping, guiding, and learning with our community to make the transition as smooth as possible.
