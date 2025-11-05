@@ -27,7 +27,7 @@ $ pip install "jupyter-book~=1"
 We considered creating a new Python package to reflect the big switch to a new documentation engine - e.g., `pip install jupyter-book2`.
 This has been done before in the Python system, and is a way to strictly separate the two projects.
 
-However, we see the engine upgrade as a continuation of the project, and not a complete replacement. We think that it provides features that our users will appreciate, and want to make it possible for them to cross the gap between the two versions without much effort.
+However, we see the engine upgrade as a continuation of the project, and not a complete replacement that warrants a new package name. We believe that it provides features that our users will appreciate, and want to make it possible for them to cross the gap between the two versions without much effort.
 
 We do not plan on maintaining the old Sphinx-based engine, and think that releasing the new engine under the same package name signals that intent most clearly.
 
