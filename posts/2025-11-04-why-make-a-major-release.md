@@ -1,6 +1,6 @@
 ---
 title: "Why we made a major release for Jupyter Book 2 instead of creating a new package"
-date: 2025-11-03
+date: 2025-11-04
 license: CC-BY-4.0
 authors:
   - Jupyter Book Team
