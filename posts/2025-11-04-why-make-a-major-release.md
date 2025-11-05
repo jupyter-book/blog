@@ -50,7 +50,7 @@ Here are recommended paths forward:
 (downgrade-jb1)=
 ### Downgrade to Jupyter Book 1
 
-The simplest thing that you could do is to simply [_downgrade to Jupyter Book 1_]().
+The simplest thing that you could do is to simply [downgrade to Jupyter Book 1](xref:jb1/resources/downgrade).
 It is still available, and you can downgrade from the command-line like so:
 
 ```shell
