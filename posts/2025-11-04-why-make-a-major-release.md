@@ -13,7 +13,7 @@ The alpha and beta versions of this release have been in progress since November
 Unfortunately, it also means that many Jupyter Books out there are now broken.
 In particular, users who haven't pinned their Jupyter Book versions to the `1.x` series will likely experience new build failures.
 
-Users can make sure their version of Jupyter Book is compatible with the 1.x series by using commands like:
+If you are not ready to try out the new version, you can reinstall a version of Jupyter Book compatible with the 1.x series by using commands like:
 
 ```shell
 $ pip install "jupyter-book<2"
