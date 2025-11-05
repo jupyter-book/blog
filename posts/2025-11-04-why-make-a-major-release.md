@@ -6,7 +6,7 @@ authors:
   - Jupyter Book Team
 ---
 
-Last night, we [released Jupyter Book 2](https://github.com/jupyter-book/jupyter-book/releases/tag/v2.0.0).
+This week, we [released Jupyter Book 2](https://github.com/jupyter-book/jupyter-book/releases/tag/v2.0.0).
 This is a major release that introduces the [MyST Document Engine](https://mystmd.org) as the back-end infrastructure that powers Jupyter Book.
 The alpha and beta versions of this release have been in progress since November 2024, and it represents a huge amount of work from the team and community that we are incredibly excited about.
 
