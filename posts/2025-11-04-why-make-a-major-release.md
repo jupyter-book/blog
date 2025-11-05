@@ -11,7 +11,7 @@ This is a major release that introduces the [MyST Document Engine](https://mystm
 The alpha and beta versions of this release have been in progress since November 2024, and it represents a huge amount of work from the team and community that we are incredibly excited about.
 
 Unfortunately, it also means that many Jupyter Books out there are now broken.
-In particular, users who haven't pinned their Jupyter Book versions to the `1.x` series will likely have an unexpected surprise.
+In particular, users who haven't pinned their Jupyter Book versions to the `1.x` series will likely experience new build failures.
 
 Users can make sure their version of Jupyter Book is compatible with the 1.x series by using commands like:
 
