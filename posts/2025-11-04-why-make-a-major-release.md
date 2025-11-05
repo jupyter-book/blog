@@ -27,9 +27,9 @@ $ pip install "jupyter-book~=1"
 We considered creating a new Python package to reflect this big switch - e.g., `pip install jupyter-book2`.
 This has been done before in the Python system, and is a way to strictly separate the two projects.
 
-However, having two codebases -- that are very different to each other -- can introduce a lot of confusion for users.
-Importantly, it also introduces an challenging maintenance burden for developers.
+However, we see the engine upgrade as a continuation of the project, and not a complete replacement. We think that it provides features that our users will appreciate, and want to make it possible for them to cross the gap between the two versions without much effort.
 
+We do not plan on maintaining the old Sphinx-based engine, and think that releasing the new engine under the same package name signals that intent most clearly.
 
 Finally, we think that having two user-facing products both called "Jupyter Book" creates some confusion: community members and users can end up talking across each other without realising that there are two engines that exist in parallel.
 
@@ -91,7 +91,5 @@ The Jupyter Book team will be monitoring these channels for questions from folks
 ## Thanks for your support
 
 Thanks again for using Jupyter Book and being part of our community.
-We know that disruptions to your workflow are really annoying,
-but we hope you will also find that the benefit of a brand new engine,
-built on modern technology, will outweigh the disruption. 
+We know that disruptions to your workflow are really annoying, but we hope you will also find that the benefit of a brand new engine, built on modern technology, will outweigh the disruption. 
 
