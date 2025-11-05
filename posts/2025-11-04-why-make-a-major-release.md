@@ -24,7 +24,7 @@ $ pip install "jupyter-book~=1"
 
 ## Why we didn't create an entirely new package
 
-We considered creating a new Python package to reflect this big switch - e.g., `pip install jupyter-book2`.
+We considered creating a new Python package to reflect the big switch to a new documentation engine - e.g., `pip install jupyter-book2`.
 This has been done before in the Python system, and is a way to strictly separate the two projects.
 
 However, we see the engine upgrade as a continuation of the project, and not a complete replacement. We think that it provides features that our users will appreciate, and want to make it possible for them to cross the gap between the two versions without much effort.
