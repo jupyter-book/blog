@@ -29,7 +29,9 @@ This has been done before in the Python system, and is a way to strictly separat
 
 However, we see the engine upgrade as a continuation of the project, and not a complete replacement that warrants a new package name. We believe that it provides features that our users will appreciate, and want to make it possible for them to cross the gap between the two versions without much effort.
 
-We do not plan on maintaining the old Sphinx-based engine, and think that releasing the new engine under the same package name signals that intent most clearly.
+We do not plan on maintaining the old Sphinx-based engine[^maint], and think that releasing the new engine under the same package name signals that intent most clearly.
+
+[^maint]: Note that others in the open source ecosystem may continue maintaining the collection of Sphinx extensions that made up Jupyter Book 1. It will simply not be a focus of the _Jupyter Book_ team or technology stack.
 
 Finally, we think that having two user-facing products both called "Jupyter Book" creates some confusion: community members and users can end up talking across each other without realising that there are two engines that exist in parallel.
 
