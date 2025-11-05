@@ -33,7 +33,7 @@ We do not plan on maintaining the old Sphinx-based engine, and think that releas
 
 Finally, we think that having two user-facing products both called "Jupyter Book" creates some confusion: community members and users can end up talking across each other without realising that there are two engines that exist in parallel.
 
-As it goes in open source projects, we discussed the various transition pathways, and acknowledge that not all team members felt equally comfortable with the chosen path—being concerned about the burden the transition imposed. 
+As it goes in open source projects, we discussed the various transition pathways, in which some team members expressed reservations with the chosen path—being concerned about the burden the transition imposed. 
 
 However, we came to a consensus around taking that path, are all very enthusiastic about the new engine, and dedicated to helping our users adopt it successfully. 
 
