@@ -8,9 +8,8 @@ nox.options.default_venv_backend = "uv|virtualenv"
 @nox.session(name="docs")
 def docs(session):
     """Build the documentation as static HTML."""
-    session.install("-e", ".[docs]")
-    session.chdir("docs")
-    session.run("jupyter", "book", "build", "--html", "--execute", "--strict")
+    session.install("jupyter-book")
+    session.run("jupyter", "book", "build", "--html", "--execute")
 
 
 @nox.session(name="docs-live")

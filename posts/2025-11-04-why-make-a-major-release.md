@@ -31,7 +31,7 @@ However, we see the engine upgrade as a continuation of the project, and not a c
 
 We do not plan on maintaining the old Sphinx-based engine[^maint], and think that releasing the new engine under the same package name signals that intent most clearly.
 
-[^maint]: Note that others in the open source ecosystem may continue maintaining the collection of Sphinx extensions that made up Jupyter Book 1. It will simply not be a focus of the _Jupyter Book_ team or technology stack.
+[^maint]: Jupyter Book 1 is essentially a [collection of Sphinx extensions](https://jupyterbook.org/v1/explain/sphinx.html). The [Sphinx engine](https://sphinx-doc.org) itself is maintained by the Sphinx community. We (the [Jupyter Book team](xref:compass/team)) do not plan on maintaining the extensions that Jupyter Book 1 used (though others in the open source ecosystem may continue doing so). This will simply not be a focus of the _Jupyter Book_ team or technology stack.
 
 Finally, we think that having two user-facing products both called "Jupyter Book" creates some confusion: community members and users can end up talking across each other without realising that there are two engines that exist in parallel.
 
