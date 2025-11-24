@@ -7,3 +7,9 @@
     npm install -g mystmd@latest && \
     myst build --html -d
   """
+
+# Keep all deploy contexts out of search indexing
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
