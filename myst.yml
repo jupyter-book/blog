@@ -2,6 +2,7 @@
 version: 1
 extends:
   - https://raw.githubusercontent.com/jupyter-book/jupyter-book/refs/heads/main/docs/_site/site.yml
+  - ./authors.yml
 project:
   title: "Jupyter Book: Blog"
   description: Updates from the Jupyter Book subproject.
@@ -11,40 +12,6 @@ project:
     - Jupyter
     - JupyterBook
     - MyST Markdown
-  contributors:
-    - id: jb-team
-      name: The Jupyter Book Team
-      url: https://compass.jupyterbook.org/team
-    - id: agoose77
-      name: Angus Hollands
-      orcid: 0000-0003-0788-3814
-      affiliations:
-        - Jupyter Book
-        - 2i2c
-    - id: choldgraf
-      name: Chris Holdgraf
-      orcid: 0000-0002-2391-0678
-      affiliations:
-        - Jupyter Book
-        - 2i2c
-    - id: rowanc1
-      name: Rowan Cockett
-      orcid: 0000-0002-7859-8394
-      affiliations:
-        - Jupyter Book
-        - Curvenote
-    - id: fwkoch
-      name: Franklin Koch
-      orcid: 0000-0002-6393-7058
-      affiliations:
-        - Jupyter Book
-        - Curvenote
-    - id: stevejpurves
-      name: Steve Purves
-      orcid: 0000-0002-0760-5497
-      affiliations:
-        - Jupyter Book
-        - Curvenote
   references:
     jpy-gov: https://jupyter.org/governance/
     guide: https://mystmd.org/guide
@@ -68,6 +35,14 @@ project:
       children:
         - pattern: posts/2024-*.md
 site:
+  parts:
+    primary_sidebar_footer: |
+      Made with [Jupyter Book](https://jupyterbook.org) and the [MyST Engine](https://mystmd.org).
+
+      ```{image} https://raw.githubusercontent.com/jupyter-book/jupyter-book/refs/heads/main/docs/media/images/logo.svg
+      :link: https://jupyterbook.org
+      :width: 50%
+      ```
   options:
     logo_text: Blog
     folders: true

@@ -20,6 +20,11 @@ To run it locally, take these steps:
    $ myst start
    ```
 
+## Live deployments
+
+- **Live site**: Built and published via GitHub Actions (`.github/workflows/deploy.yml`); `main` branch changes go through that pipeline.
+- **PR previews**: Netlify builds every pull request so previews are available for review (config in `netlify.toml`); previews are marked noindex and are not the live site.
+
 ## Release Posts
 
 The `posts/releases/` folder contains automatically generated release posts for all repositories in the Jupyter Book organization.
