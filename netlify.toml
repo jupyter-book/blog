@@ -1,3 +1,4 @@
+# Netlify configuration for PR previews - this is NOT for the live site! That uses GH actions
 [build]
   publish = "_build/html"
   environment = { PYTHON_VERSION = "3.12" }
@@ -8,7 +9,7 @@
     myst build --html -d
   """
 
-# Keep all deploy contexts out of search indexing
+# Keep all deploy contexts out of search indexing because we use github actions for the live site
 [[headers]]
   for = "/*"
   [headers.values]
