@@ -34,12 +34,18 @@ The primary sidebar (the left table of contents) now accepts custom content at t
 Custom sidebar footer example.
 ```
 
-Set a Markdown file under `site.parts.primary_sidebar_footer` and it will render in place of the default branding:
+Set a Markdown file under `site.parts.primary_sidebar_footer` and it will render in place of the default branding. For example, here's the sidebar footer in the Jupyter Book blog:
 
 ```yaml
 site:
   parts:
-    primary_sidebar_footer: _site/primary_sidebar_footer.md
+    primary_sidebar_footer: |
+      Made with [Jupyter Book](https://jupyterbook.org) and the [MyST Engine](https://mystmd.org).
+
+      ```{image} https://raw.githubusercontent.com/jupyter-book/jupyter-book/refs/heads/main/docs/media/images/logo.svg
+      :link: https://jupyterbook.org
+      :width: 50%
+      ```
 ```
 
 If you leave the file empty, the sidebar footer vanishes. Otherwise drop in a logo, support link, or short note.

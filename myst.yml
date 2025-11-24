@@ -35,6 +35,14 @@ project:
       children:
         - pattern: posts/2024-*.md
 site:
+  parts:
+    primary_sidebar_footer: |
+      Made with [Jupyter Book](https://jupyterbook.org) and the [MyST Engine](https://mystmd.org).
+
+      ```{image} https://raw.githubusercontent.com/jupyter-book/jupyter-book/refs/heads/main/docs/media/images/logo.svg
+      :link: https://jupyterbook.org
+      :width: 50%
+      ```
   options:
     logo_text: Blog
     folders: true
