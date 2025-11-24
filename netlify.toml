@@ -1,0 +1,9 @@
+[build]
+  publish = "_build/html"
+  environment = { PYTHON_VERSION = "3.12" }
+  command = """
+    # Build with the latest published mystmd release
+    # (Release notes generation via gh is skipped in Netlify; run locally if needed)
+    npm install -g mystmd@latest && \
+    myst build --html -d
+  """
