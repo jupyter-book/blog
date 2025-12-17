@@ -100,4 +100,8 @@ $ jupyter book start
 
 ## Acknowledgements
 
+This content was adapted from a post originally written by @stevejpurves on his website:
+
+https://opensci.dev/articles/on-the-myst-v3-ast
+
 We're grateful to the community contributors who made this upgrade possible, particularly [@agoose77](https://github.com/agoose77) and [@stevejpurves](https://github.com/stevejpurves) for implementating this, and to [@agoose77](https://github.com/agoose77) and [@rowanc1](https://github.com/rowanc1) for kicking off the [MEP](https://github.com/jupyter-book/myst-enhancement-proposals/pull/32) process.
