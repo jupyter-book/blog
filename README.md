@@ -2,6 +2,12 @@
 
 A blog for the Jupyter Book subproject.
 
+## Repository layout
+
+- `noxfile.py` contains nox commands for automating tasks around the project. Get a list of commands with `nox -l`.
+- `src/` contains scripts that further automate tasks around the project.
+- `docs/` contains the blue itself as a MyST site.
+
 ## Local development
 
 This blog is a small [MyST site](https://mystmd.org) along with a [javascript plugin for blogging](plugins/blog.mjs).
