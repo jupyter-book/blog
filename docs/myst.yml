@@ -8,11 +8,13 @@ project:
   description: Updates from the Jupyter Book subproject.
   plugins:
     # For lists of blog posts and releases
-    - https://github.com/jupyter-book/blog-plugin/releases/download/v1/plugin.mjs
+    - https://github.com/jupyter-book/blog-plugin/releases/download/v2.1.0/plugin.mjs
     # To make issue links render w/ titles
     - https://github.com/jupyter-book/myst-plugins/releases/download/github-issue-link%402025-12-01/index.mjs
     # To auto-link github author names
     - https://github.com/jupyter-book/myst-plugins/releases/download/github-handle-links%402025-12-01/index.mjs
+    # To turn `:emoji-shortcodes:` into emojis
+    - https://raw.githubusercontent.com/jupyter-book/myst-plugins/main/plugins/emoji-shortcodes/emoji-shortcodes.mjs
   keywords:
     - Jupyter
     - JupyterBook
@@ -30,15 +32,17 @@ project:
     - posts/releases/README.md
   toc:
     - file: index.md
-    - title: Releases
+    - file: releases.md
       children:
-        - pattern: posts/releases/*.md
-    - title: "2025"
+        - pattern: release/*.md
+    - title: Blog posts
       children:
-        - pattern: posts/2025-*.md
-    - title: "2024"
-      children:
-        - pattern: posts/2024-*.md
+      - title: "2025"
+        children:
+          - pattern: posts/2025-*.md
+      - title: "2024"
+        children:
+          - pattern: posts/2024-*.md
 site:
   parts:
     primary_sidebar_footer: |
