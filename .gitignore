@@ -4,5 +4,4 @@ __pycache__
 # MyST build outputs
 _build
 node_modules
-posts/releases/*.md
-!posts/releases/README.md
+docs/posts/releases/*.md
