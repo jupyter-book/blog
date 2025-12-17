@@ -5,8 +5,8 @@
   command = """
     # Build with the latest published mystmd release
     # (Release notes generation via gh is skipped in Netlify; run locally if needed)
-    pip install nox
-    nox -s docs
+    npm install -g mystmd@latest && \
+    cd docs &&myst build --html -d
   """
 
 # Keep all deploy contexts out of search indexing because we use github actions for the live site
