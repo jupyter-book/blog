@@ -8,6 +8,8 @@ project:
   description: Updates from the Jupyter Book subproject.
   plugins:
     - https://github.com/jupyter-book/blog-plugin/releases/latest/download/plugin.mjs
+    # So that links to github handles will not create reference errors
+    - https://github.com/jupyter-book/myst-plugins/releases/download/github-handle-links%402025-12-01/index.mjs
   keywords:
     - Jupyter
     - JupyterBook
