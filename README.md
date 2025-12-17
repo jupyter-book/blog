@@ -17,6 +17,7 @@ To run it locally, take these steps:
 3. **Build the site**:
 
    ```shell
+   $ cd docs
    $ myst start
    ```
 

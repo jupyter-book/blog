@@ -7,8 +7,11 @@ project:
   title: "Jupyter Book: Blog"
   description: Updates from the Jupyter Book subproject.
   plugins:
-    - https://github.com/jupyter-book/blog-plugin/releases/latest/download/plugin.mjs
-    # So that links to github handles will not create reference errors
+    # For lists of blog posts and releases
+    - https://github.com/jupyter-book/blog-plugin/releases/download/v1/plugin.mjs
+    # To make issue links render w/ titles
+    - https://github.com/jupyter-book/myst-plugins/releases/download/github-issue-link%402025-12-01/index.mjs
+    # To auto-link github author names
     - https://github.com/jupyter-book/myst-plugins/releases/download/github-handle-links%402025-12-01/index.mjs
   keywords:
     - Jupyter
@@ -27,7 +30,7 @@ project:
     - posts/releases/README.md
   toc:
     - file: index.md
-    - title: Releases
+    - file: Releases
       children:
         - pattern: posts/releases/*.md
     - title: "2025"

@@ -43,7 +43,7 @@ def main():
 
     # Configuration
     org = "jupyter-book"
-    releases_dir = Path("posts/releases")
+    releases_dir = Path("docs/posts/releases")
     temp_dir = Path("_build/release_notes")
 
     # Clean and ensure directories exist
@@ -66,6 +66,10 @@ def main():
     except subprocess.CalledProcessError as e:
         print(f"Error fetching repositories: {e}")
         sys.exit(1)
+
+    # Use this to exclude repositories that are particularly noisy we can focus on the marquee projects.
+    EXCLUDE_REPOSITORIES = ["myst-plugins", "workshop-template"]
+    repos = [repo for repo in repos if repo["name"] not in EXCLUDE_REPOSITORIES]
 
     print("Fetching releases from all repositories...")
 
