@@ -47,7 +47,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build HTML Assets
-        run: cd docs && myst build docs --html -d
+        run: cd docs && myst build --html -d
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

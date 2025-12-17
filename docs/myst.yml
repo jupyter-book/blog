@@ -30,7 +30,7 @@ project:
     - posts/releases/README.md
   toc:
     - file: index.md
-    - file: Releases
+    - title: Releases
       children:
         - pattern: posts/releases/*.md
     - title: "2025"
