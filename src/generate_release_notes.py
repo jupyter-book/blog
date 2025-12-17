@@ -43,7 +43,7 @@ def main():
 
     # Configuration
     org = "jupyter-book"
-    releases_dir = Path("docs/posts/releases")
+    releases_dir = Path("docs/release")
     temp_dir = Path("_build/release_notes")
 
     # Clean and ensure directories exist
@@ -97,15 +97,13 @@ def main():
         except json.JSONDecodeError:
             print(f"Error parsing releases for {repo_name}")
 
-    # Sort releases by publication date so the largest numbers are the newest.
-    # this forces latest releases to the top until we have a proper sorting system.
-    all_releases.sort(key=lambda x: x["published_at"], reverse=True)
+    # Filter out releases without a publication date
+    all_releases = [r for r in all_releases if r.get("published_at")]
 
     total = len(all_releases)
     print(f"Found {total} total releases")
 
-    for ii, release in enumerate(all_releases):
-        number = ii + 1
+    for release in all_releases:
         title = release["name"] or release["tag_name"]
         repo_name = release["repo_name"]
 
@@ -122,22 +120,27 @@ def main():
             title = f"{repo_name} {title}"
 
         date = release["published_at"][:10]
-        formatted_date = format_date(date)
-        title = f"{title} - {formatted_date}"
         body = release["body"] or ""
+
+        # Generate human-readable URL from tag (e.g., mystmd@1.7.1 -> /release/mystmd-1.7.1)
+        tag_name = release["tag_name"]
+        url_slug = tag_name.replace("@", "-")
+        url = f"/release/{url_slug}"
 
         # Wrap @mentions in backticks (only if preceded by space, (, comma, or [, and not already wrapped)
         body = re.sub(r"(?<=[\s(,\[])@(\w+)(?!`)", r"`@\1`", body)
 
-        # Create filename
-        safe_title = re.sub(r"[^a-zA-Z0-9-]", "-", title.lower())
-        filename = releases_dir / f"{number:03d}-{repo_name}-{safe_title}.md"
+        # Create filename based on tag name
+        safe_tag = re.sub(r"[^a-zA-Z0-9-.]", "-", tag_name.lower())
+        filename = releases_dir / f"{repo_name}-{safe_tag}.md"
 
         # Write the markdown file
         with open(filename, "w") as f:
             f.write("---\n")
             f.write(f"title: {title}\n")
             f.write(f"date: {date}\n")
+            f.write(f"url: {url}\n")
+            f.write(f"repository: {repo_name}\n")
             f.write("author: The Jupyter Book Team\n")
             f.write("tags:\n")
             f.write("  - release\n")

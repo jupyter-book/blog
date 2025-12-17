@@ -21,4 +21,7 @@ This is a place for [the Jupyter Book team](https://compass.jupyterbook.org) to 
 ## Recent blog posts
 
 :::{blog-posts}
+:kind: table
+:path: posts/*.md
+:limit: 20
 :::
