@@ -1,3 +1,7 @@
+# THIS IS DEPLOYED FROM jupyter-book/jupyter-book/blog
+# We do not use ReadTheDocs directly on the `jupyter-book/blog` repository.
+# It is pushed to the `blog` branch with a GitHub Worfklow and served from there.
+# This lets us publish the blog at jupyterbook.org/blog
 version: 2
 
 build:
