@@ -27,10 +27,16 @@ To run it locally, take these steps:
    $ myst start
    ```
 
-## Live deployments
+## Website deployment
 
-- **Live site**: Built and published via GitHub Actions (`.github/workflows/deploy.yml`); `main` branch changes go through that pipeline.
-- **PR previews**: Netlify builds every pull request so previews are available for review (config in `netlify.toml`); previews are marked noindex and are not the live site.
+We deploy the live site in two ways - we prototyping each to decide which we'll stick with. Both are published via this GitHub Workflow: `.github/workflows/deploy.yml`
+
+- Using GitHub Pages to serve the blog at blog.jupyterbook.org.
+- Using ReadTheDocs via the `blog` branch in the `jupyter-book` repository at `jupyterbook.org/blog`.
+
+## PR Previews
+
+Netlify builds every pull request so previews are available for review (config in `netlify.toml`); previews are marked `noindex` and are not the live site.
 
 ## Release Posts
 

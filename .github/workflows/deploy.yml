@@ -55,3 +55,16 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # BLOG_SYNC_TOKEN is a PAT for @choldgraf that expires after a year
+      # It has write access to the jupyter-book/jupyter-book repo
+      - name: Sync to jupyter-book blog branch (prototype)
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.BLOG_SYNC_TOKEN }}
+        with:
+          source-directory: '.'
+          destination-github-username: 'jupyter-book'
+          destination-repository-name: 'jupyter-book'
+          target-branch: blog
+          user-email: github-actions[bot]@users.noreply.github.com
