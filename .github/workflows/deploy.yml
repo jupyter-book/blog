@@ -68,3 +68,4 @@ jobs:
           destination-repository-name: 'jupyter-book'
           target-branch: blog
           user-email: github-actions[bot]@users.noreply.github.com
+          create-target-branch-if-needed: true
