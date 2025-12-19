@@ -63,6 +63,7 @@ jobs:
         run: |
           mkdir -p blog-sync
           cp -r docs blog-sync/
+          rm -rf blog-sync/docs/_build
           cp -r src blog-sync/
           cp noxfile.py blog-sync/
           cp .readthedocs.yml blog-sync/
