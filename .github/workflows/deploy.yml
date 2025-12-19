@@ -58,16 +58,17 @@ jobs:
 
       # BLOG_SYNC_TOKEN is a PAT for @choldgraf that expires after a year
       # It has write access to the jupyter-book/jupyter-book repo
+      # permissions needed (only has 'content write', not 'workflow write', so can't write workflow files)
       - name: Prepare blog files for sync
         run: |
-          mkdir -p /tmp/blog-sync
-          cp -r docs /tmp/blog-sync/
-          cp -r src /tmp/blog-sync/
-          cp noxfile.py /tmp/blog-sync/
-          cp .readthedocs.yml /tmp/blog-sync/
+          mkdir -p blog-sync
+          cp -r docs blog-sync/
+          cp -r src blog-sync/
+          cp noxfile.py blog-sync/
+          cp .readthedocs.yml blog-sync/
 
           # Create warning README
-          cat > /tmp/blog-sync/README.md << EOF
+          cat > blog-sync/README.md << EOF
           ❌ DO NOT EDIT THIS DIRECTLY ❌
 
           The source files for the blog are at https://github.com/jupyter-book/blog.
@@ -79,7 +80,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.BLOG_SYNC_TOKEN }}
         with:
-          source-directory: '/tmp/blog-sync'
+          source-directory: 'blog-sync'
           destination-github-username: 'jupyter-book'
           destination-repository-name: 'jupyter-book'
           target-branch: blog
