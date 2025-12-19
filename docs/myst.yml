@@ -1,6 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 extends:
+  # site.yml is auto-downloaded and adapted from jupyter-book/jupyter-book via src/download_nav_items.py
   - ./site.yml
   - ./authors.yml
 project:
