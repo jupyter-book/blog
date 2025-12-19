@@ -42,6 +42,8 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
+      - name: Install dependencies
+        run: pip install nox uv
       - name: Build the documentation (also generates release notes and downloads nav items)
         run: nox -s docs
         env:
