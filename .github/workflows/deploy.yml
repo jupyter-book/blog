@@ -42,6 +42,8 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
+      - name: Download navigation from jupyter-book
+        run: pip install pyyaml && python src/download_nav_items.py
       - name: Generate Release Notes from GitHub Releases
         run: python src/generate_release_notes.py
         env:
