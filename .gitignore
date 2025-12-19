@@ -5,3 +5,4 @@ __pycache__
 _build
 node_modules
 docs/release
+docs/site.yml
