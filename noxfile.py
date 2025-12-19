@@ -10,6 +10,7 @@ def docs(session):
     """Build the documentation as static HTML."""
     session.install("jupyter-book")
     download_nav(session)
+    download_releases(session)
     session.chdir("docs")
     session.run("jupyter", "book", "build", "--html", "--execute")
 
@@ -19,6 +20,7 @@ def docs_live(session):
     """Start a live development server for the documentation."""
     session.install("jupyter-book")
     download_nav(session)
+    download_releases(session)
     session.chdir("docs")
     session.run("jupyter", "book", "start", "--execute")
 
@@ -34,7 +36,14 @@ def clean(session):
 @nox.session(name="download-releases")
 def download_releases(session):
     """Download release notes from GitHub."""
-    session.run("python", "src/generate_release_notes.py", external=True)
+    from pathlib import Path
+
+    # Only download if the releases directory is empty or doesn't exist
+    releases_dir = Path("docs/release")
+    if not releases_dir.exists() or not any(releases_dir.glob("*.md")):
+        session.run("python", "src/generate_release_notes.py", external=True)
+    else:
+        session.log("Release notes already exist, skipping download")
 
 
 @nox.session(name="download-nav")

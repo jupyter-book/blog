@@ -42,14 +42,10 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-      - name: Download navigation from jupyter-book
-        run: pip install pyyaml && python src/download_nav_items.py
-      - name: Generate Release Notes from GitHub Releases
-        run: python src/generate_release_notes.py
+      - name: Build the documentation (also generates release notes and downloads nav items)
+        run: nox -s docs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build HTML Assets
-        run: cd docs && myst build --html -d
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
