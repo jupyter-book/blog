@@ -4,7 +4,7 @@
   environment = { PYTHON_VERSION = "3.12" }
   command = """
     pip install nox && \
-    nox -s docs
+    python -m nox -s docs
   """
 
 # Keep all deploy contexts out of search indexing because we use github actions for the live site
