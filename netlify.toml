@@ -5,6 +5,7 @@
   command = """
     pip install pyyaml && \
     python src/download_nav_items.py && \
+    python src/generate_release_notes.py && \
     npm install -g mystmd@latest && \
     cd docs && myst build --html -d
   """
