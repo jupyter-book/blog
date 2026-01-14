@@ -35,7 +35,7 @@ project:
     - file: index.md
     - file: releases.md
       children:
-        - pattern: release/*.md
+        - pattern: releases/*.md
     - title: Blog posts
       children:
       - title: "2026"

@@ -39,7 +39,7 @@ def download_releases(session):
     from pathlib import Path
 
     # Only download if the releases directory is empty or doesn't exist
-    releases_dir = Path("docs/release")
+    releases_dir = Path("docs/releases")
     if not releases_dir.exists() or not any(releases_dir.glob("*.md")):
         session.run("python", "src/generate_release_notes.py", external=True)
     else:

@@ -2,6 +2,7 @@
 [build]
   publish = "docs/_build/html"
   environment = { PYTHON_VERSION = "3.12" }
+  # We do not test the release notes download because it depends on `gh`, and we don't have auth in netlify
   command = """
     pip install pyyaml && \
     python src/download_nav_items.py && \
