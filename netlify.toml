@@ -1,12 +1,20 @@
 # Netlify configuration for PR previews - this is NOT for the live site! That uses GH actions
 [build]
-  publish = "docs/_build/html"
-  environment = { PYTHON_VERSION = "3.12" }
+  # Netlify previews are served from ./publish with the site nested in /blog.
+  # This keeps BASE_URL=/blog working since we intend to proxiy the blog at jupyterbook.org/blog.
+  publish = "publish"
+  environment = { PYTHON_VERSION = "3.12", BASE_URL = "/blog" }
   command = """
     pip install pyyaml && \
     python src/download_nav_items.py && \
     npm install -g mystmd@latest && \
-    cd docs && myst build --html -d
+    cd docs && \
+    myst build --html -d && \
+    mkdir -p ../publish/blog && \
+    mv _build/html/* ../publish/blog/ && \
+    if [ "$CONTEXT" = "deploy-preview" ]; then \
+      printf "/ /blog/ 302\n" > ../publish/_redirects; \
+    fi
   """
 
 # Keep all deploy contexts out of search indexing because we use github actions for the live site
