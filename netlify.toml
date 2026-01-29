@@ -11,7 +11,10 @@
     cd docs && \
     myst build --html -d && \
     mkdir -p ../publish/blog && \
-    mv _build/html/* ../publish/blog/
+    mv _build/html/* ../publish/blog/ && \
+    if [ "$CONTEXT" = "deploy-preview" ]; then \
+      printf "/ /blog/ 302\n" > ../publish/_redirects; \
+    fi
   """
 
 # Keep all deploy contexts out of search indexing because we use github actions for the live site
