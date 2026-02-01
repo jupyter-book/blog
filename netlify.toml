@@ -3,7 +3,7 @@
   # Netlify previews are served from ./publish with the site nested in /blog.
   # Use BASE_URL=blog since we intend to proxy the blog at jupyterbook.org/blog.
   publish = "publish"
-  environment = { BASE_URL = "blog" }
+  environment = { BASE_URL = "/blog" }
   command = """
     npm install -g mystmd@latest && \
     cd docs && \
