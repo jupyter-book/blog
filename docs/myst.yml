@@ -2,6 +2,7 @@
 version: 1
 extends:
   - ./authors.yml
+  - https://github.com/jupyter-book/jupyterbook.org/raw/refs/heads/main/docs/_site/site.yml
 project:
   title: "Jupyter Book: Blog"
   description: Updates from the Jupyter Book subproject.
@@ -48,5 +49,6 @@ site:
       :link: https://jupyterbook.org
       :width: 50%
       ```
+    footer: https://github.com/jupyter-book/jupyterbook.org/raw/refs/heads/main/docs/_site/footer.md
   options:
     folders: true
