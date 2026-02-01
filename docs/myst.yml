@@ -1,14 +1,12 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 extends:
-  # site.yml is auto-downloaded and adapted from jupyter-book/jupyter-book via src/download_nav_items.py
-  - ./site.yml
   - ./authors.yml
 project:
   title: "Jupyter Book: Blog"
   description: Updates from the Jupyter Book subproject.
   plugins:
-    # For lists of blog posts and releases
+    # For lists of blog posts
     - https://github.com/jupyter-book/blog-plugin/releases/download/v2.1.0/plugin.mjs
     # To make issue links render w/ titles
     - https://github.com/jupyter-book/myst-plugins/releases/download/github-issue-link%402025-12-01/index.mjs
@@ -23,31 +21,25 @@ project:
   references:
     jpy-gov: https://jupyter.org/governance/
     guide: https://mystmd.org/guide
-    compass: https://compass.jupyterbook.org
+    compass: https://jupyterbook.org/compass
     jb: https://jupyterbook.org/stable
     jb2-paper: https://proceedings.scipy.org/articles/hwcj9957
   github: https://github.com/jupyter-book/blog
   # To autogenerate a Table of Contents, run "myst init --write-toc"
   license: CC0-1.0
-  exclude:
-    - posts/releases/README.md
   toc:
     - file: index.md
-    - file: releases.md
+    - title: "2026"
       children:
-        - pattern: release/*.md
-    - title: Blog posts
+        - pattern: posts/2026/*.md
+    - title: "2025"
       children:
-      - title: "2026"
-        children:
-          - pattern: posts/2026/*.md
-      - title: "2025"
-        children:
-          - pattern: posts/2025-*.md
-      - title: "2024"
-        children:
-          - pattern: posts/2024-*.md
+        - pattern: posts/2025-*.md
+    - title: "2024"
+      children:
+        - pattern: posts/2024-*.md
 site:
+  template: book-theme
   parts:
     primary_sidebar_footer: |
       Made with [Jupyter Book](https://jupyterbook.org) and the [MyST Engine](https://mystmd.org).
@@ -57,5 +49,4 @@ site:
       :width: 50%
       ```
   options:
-    logo_text: Blog
     folders: true
