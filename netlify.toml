@@ -1,12 +1,10 @@
 # Netlify configuration for PR previews - this is NOT for the live site! That uses GH actions
 [build]
   # Netlify previews are served from ./publish with the site nested in /blog.
-  # This keeps BASE_URL=/blog working since we intend to proxiy the blog at jupyterbook.org/blog.
+  # Use BASE_URL=blog since we intend to proxy the blog at jupyterbook.org/blog.
   publish = "publish"
-  environment = { PYTHON_VERSION = "3.12", BASE_URL = "/blog" }
+  environment = { BASE_URL = "/blog" }
   command = """
-    pip install pyyaml && \
-    python src/download_nav_items.py && \
     npm install -g mystmd@latest && \
     cd docs && \
     myst build --html -d && \
