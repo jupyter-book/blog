@@ -1,0 +1,37 @@
+# Build the MyST site and deploy to GitHub Pages
+name: Deploy
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    # Rebuild daily at 1 AM Pacific
+    - cron: '0 8 * * *'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    environment: github-pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+      - name: Install MyST Markdown
+        run: npm install -g mystmd
+      - name: Build the site
+        run: cd docs && myst build --html
+        env:
+          BASE_URL: /blog
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './docs/_build/html'
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
