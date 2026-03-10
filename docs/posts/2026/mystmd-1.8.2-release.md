@@ -16,7 +16,7 @@ A widget is a JavaScript module that exports a `render` function. You pass it in
 
 ```{figure} ./images/anywidget-demo.png
 :width: 400 
-A little confetti demo that we use to show off embedding widgets in a MyST document with anywdiget!
+A little confetti demo that we use to show off embedding widgets in a MyST document with anywidget!
 ```
 
 :::{note}
