@@ -35,20 +35,23 @@ And here's the directive that created it:
 
 ## How we got here
 
-The idea of a portable widget interface for interactive computing isn't new: [anywidget](https://anywidget.dev/) has been an emerging standard in the Jupyter community for a while, leveraging modern Javascript principles (ESM Modules please!), and giving you a simple `initialize({ model }); render({ model, el })` contract so that widgets can be written once and reused across notebooks. Also AnyWidget in Jupyter supports tight integration with the kernel allowing for similar kind of interactions that you get with working with ipywidgets.
+The idea of a portable widget interface for interactive computing isn't new: [anywidget](https://anywidget.dev/) has been an emerging standard in the Jupyter community for a while, leveraging modern Javascript principles (via [ESM Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)), and giving you a simple `initialize({ model }); render({ model, el })`[^model] contract so that widgets can be written once and reused across notebooks. Also AnyWidget in Jupyter supports tight integration with the kernel allowing for similar kind of interactions that you get with working with `ipywidgets`[^jupyter].
 
+[^model]: The AnyWidget spec provides for a model that is both responsible for exposing the properties supplied within the `{anywidget}` directive and enables communication between widgets on the page at runtime.
 
-From the MyST Markdown and Jupyter Book point of view we've focussed on supporting the `render()` side of the AnyWidget interface to allow MyST users to bring any kind of javascript based interactivity into their articles and books _without having to lean on Jupyter at all_.
+[^jupyter]: See the [Modern Web Meets Jupyter](https://anywidget.dev/blog/anywidget-02/) blog post for an introduction on how AnyWidgets are used in Jupyter
 
-That part of the story started with Curvenote, who built support for [AnyWidgets as a MyST Markdown extension](https://www.npmjs.com/package/@curvenote/any-widget) while working with researchers to support domain specific visualizations and then upstreamed the implementation to create the `{anywidget}` directive that has just been released in `mystmd and `jb2`.
+From the MyST Markdown and Jupyter Book point of view we've focussed on supporting the `render()` side of the AnyWidget interface (see [AnyWidget Frontend Modules](https://anywidget.dev/en/afm/#what-is-afm)) to allow MyST users to bring any kind of javascript based interactivity into their articles and books _without having to lean on Jupyter at all_.
+
+That part of the story started at SciPy 2024 with [Trevor Mantz](https://github.com/manzt) and Steve Purves hacking through a proof of concept during the sprints. Curvenote built working support for [AnyWidgets as a MyST Markdown extension](https://www.npmjs.com/package/@curvenote/any-widget) while working with researchers to support domain specific visualizations and then upstreamed the implementation to create the `{anywidget}` directive that has just been released in `mystmd` and `jb2`.
 
 The new directive in `mystmd` and the respective supporting package in `@myst-theme/anywidget` evolved  with input from the JupyterBook team and now:
 
 * `anywidget` is a new node in the MyST AST, meaning first class support for this capability outside of notebooks.
-* `mystmd` will bundle ESM and CSS modules at **build time**, ensuring dependencies are packages with the book/article when it is published or deployed.
+* `mystmd` will bundle ESM and CSS modules at **build time**, ensuring dependencies are packaged with the book/article when it is published or deployed.
 * The ESM and CSS modules can either be (a) hosted remotely, which makes sense for shared widgets that many people are using; or (b) collaborating around or added as local files, which makes sense for widgets specific to a single book/website.
-* The `NodeRenderer` part of the release is an independent package  that can be optionally adopted by theme developers (it's already built into the core themes).
-* The `NodeRenderer` part of the release is an independent package [@myst-theme/anywidget](https://www.npmjs.com/package/@myst-theme/anywidget) that can be optionally adopted by theme developers (it's already built into the core themes). For mystmd and JupyterBook users, to upgrade to the latest theme, you can run `myst clean --templates` before you next start your server. 
+* The `NodeRenderer` part of the release is an independent package [@myst-theme/anywidget](https://www.npmjs.com/package/@myst-theme/anywidget)  that can be optionally adopted by theme developers (it's already built into the core themes).
+* For mystmd and JupyterBook users, to upgrade to the latest theme, you can run `myst clean --templates` before you next start your server. 
 
 ## Usage
 
@@ -62,8 +65,8 @@ If you want to try it, the [example-widgets repo](https://github.com/jupyter-boo
 
 Widget support in MyST is still marked experimental so the details may evolve. There are still some things on the roadmap for `{anywidget}` which will no doubt expand as we hear of new requirements from widget creators, but we expect the following to be close to the top of the stack:
 
-* The `model` part of the interface, which will allow multiple instances of a widget to communicate on the page
+* The `model` part of the interface, which will allow multiple instances of a widget to communicate on the page[^model]
 * Shipping additional dependencies like static files that the widgets may need
-* 
+  
 The JupyterBook team is actively working on improving and evolving the widget model and integrating with Jupyter. We look forward to seeing what the community builds — visit the [discord](https://discord.mystmd.org/) to showcase what you have built!
 
