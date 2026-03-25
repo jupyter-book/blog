@@ -31,7 +31,7 @@ The Jupyter Book team are keen to provide a synchronous meeting space for our co
 Each month, at alternating days and slightly different formats.
 
 - **Month A**: Tuesdays, shared with the [JupyterHub Collaboration Cafe][hub-cafe].
-- **Monthy B**: Wednesdays, with the Jupyter Book community.
+- **Month B**: Wednesdays, with the Jupyter Book community.
 
 See below for links to the various community contact points, which includes the events described here as well as information for connecting.
 
