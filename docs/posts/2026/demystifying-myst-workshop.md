@@ -19,7 +19,7 @@ The workshop aims to remove barriers for educators who want to use Jupyter Book 
 
 Attendees will learn how to contribute to the Jupyter Book community, collaborate with maintainers, and advocate for the needs of their users.
 
-**Note**: the detailed agenda is still in the works, so please share an idea in a [Collaboration Cafe](https://compass.jupyterbook.org/collaboration-cafe/) if you've got one.
+**Note**: the agenda will be available soon, if you have ideas you would like to be discussed there please share them in the [related issue](https://github.com/jupyter-book/team-compass/issues/47).
 
 ## Where and how to join
 
