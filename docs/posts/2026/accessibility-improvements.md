@@ -26,9 +26,10 @@ Most of the recent fixes landed in the default `myst-theme`s, which are the out-
 - **Reflow at small viewports and high zoom.** [Wide tables no longer overflow the page](https://github.com/jupyter-book/myst-theme/pull/852), and the [navbar grows in height when content needs more room](https://github.com/jupyter-book/myst-theme/pull/863).
 - **The search dialog is more screen-reader friendly.** We [improved ARIA semantics](https://github.com/jupyter-book/myst-theme/pull/854) on the "search popup" so screen readers announce it correctly.
 
-We also shipped a user-facing change unrelated to accessibility!
+We also shipped a few user-facing changes unrelated to accessibility!
 
 - **Strict no longer force-checks links.** Strict mode now [skips link checking](https://github.com/jupyter-book/mystmd/pull/2819) so that it is faster and more reliable. This was causing a bunch of users to slow down their builds, but now you'll need to explicitly pass `--check-links` to ensure links are checked.
+- **Execution with multiple kernels is more stable.** We fixed a race condition where [Jupyter kernel connections weren't fully closed](https://github.com/jupyter-book/mystmd/pull/2853) before the next request came in, which could cause intermittent failures when executing notebooks across multiple kernels.
 
 ## Upgrade
 
