@@ -14,6 +14,8 @@ You can now [embed JavaScript widgets](https://mystmd.org/guide/widgets) in your
 
 A widget is a JavaScript module that exports a `render` function. You pass it initial state as JSON in the directive body, and it renders an interactive element on the page. You could use this for interactive figures, explorable explanations, or custom visualizations without leaving MyST.
 
+Thank you to [Curvenote](https://curvenote.com) for [upstreaming](https://github.com/curvenote/curvenote/tree/main/packages/any-widget) the `{anywidget}` directive, which has been in development since a Scientific Python sprint in 2024.
+
 ```{figure} ./images/anywidget-demo.png
 :width: 400 
 A little confetti demo that we use to show off embedding widgets in a MyST document with anywidget!
