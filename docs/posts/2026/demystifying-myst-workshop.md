@@ -9,24 +9,7 @@ authors:
 
 We're excited to share that [Demystifying MyST Markdown in Education](https://events.linuxfoundation.org/demystifying-myst-markdown/) is happening **June 15–17, 2026** in Orsay, France. It's a three-day workshop organized by the Jupyter community, focused on helping science educators adopt Jupyter Book and the MyST document engine for their teaching materials.
 
-## What's it about?
-
-The workshop aims to remove barriers for educators who want to use Jupyter Book and MyST to publish accessible, reproducible pedagogical content. Here are the broad topics of each day of the event:
-
-- **Teaching use cases and needs** - what educators actually need from tools like Jupyter Book.
-- **Contributor tutorials and onboarding** - how to get involved with the project.
-- **MyST Markdown as a text representation for Jupyter notebooks** - writing and sharing computational narratives.
-
-Attendees will learn how to contribute to the Jupyter Book community, collaborate with maintainers, and advocate for the needs of their users.
-
-**Note**: the agenda will be available soon, if you have ideas you would like to be discussed there please share them in the [related issue](https://github.com/jupyter-book/team-compass/issues/47).
-
-## Where and how to join
-
-The workshop is hosted by [Laboratoire Interdisciplinaire des Sciences du Numérique (LISN)](https://www.lisn.upsaclay.fr/) and [SaclAI-School](https://www.dataia.eu/en/saclai-school) at Université Paris-Saclay.
-**Travel funding is available**, [apply here for travel funding](https://events.linuxfoundation.org/demystifying-myst-markdown/attend/travel-funding/).
-
-Registration and full details are on the [event page](https://events.linuxfoundation.org/demystifying-myst-markdown/).
+Learn more in this [Jupyter Blog event post](https://blog.jupyter.org/a-jupyter-workshop-demystifying-myst-markdown-in-education-612995ff6d56).
 
 ## Thanks
 
