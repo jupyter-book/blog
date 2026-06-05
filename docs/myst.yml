@@ -32,6 +32,7 @@ project:
   license: CC0-1.0
   toc:
     - file: index.md
+    - file: contributing-release-posts.md
     - title: "2026"
       children:
         - pattern: posts/2026/*.md

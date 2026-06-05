@@ -29,3 +29,8 @@ Anybody is encouraged to write blog posts! Here are some tips:
 - Feel free to blog about any of them!
 - Do so by adding a new markdown file to the `posts/` folder and making a Pull Request.
 - Ping the team for review and editing in Discord.
+
+### Writing release posts
+
+Posts that summarize a recent `mystmd` or `myst-theme` release follow a specific shape.
+See [Writing a release blog post](./docs/contributing-release-posts.md) for where release info lives, how to structure the post, and the review workflow.
