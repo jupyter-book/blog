@@ -33,12 +33,11 @@ Anybody is encouraged to write blog posts! Here are some tips:
     ---
     title: 
     date: 
-    license: 
     authors:
       - 
     ---
     ```
-    You can find detailed information about the metadata [here](https://mystmd.org/guide/authorship). For examples, browse the files in the `posts/` directory.
+    You can find detailed information about the metadata in the [MyST authorship guide](https://mystmd.org/guide/authorship). For examples, browse the files in the `posts/` directory.
 
   - Choose a descriptive file name, as it will become the last part of the page URL. For example, a file named `my-post.md` will be accessible at `https://jupyterbook.org/blog/posts/current-year/my-post`  
 - Make a Pull Request and ping the team for review and editing in Discord
