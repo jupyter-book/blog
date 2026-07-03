@@ -37,6 +37,12 @@ project:
       affiliations:
         - Jupyter Book
         - Curvenote
+    - id: sbonaretti
+      name: Serena Bonaretti
+      website: https://sbonaretti.github.io/
+      github: sbonaretti
+      affiliations:
+        - Jupyter Book
   affiliations:
     - id: curvenote
       name: Curvenote
