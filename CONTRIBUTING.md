@@ -25,7 +25,19 @@ Anybody is encouraged to share blog post ideas! Here are some tips:
 
 Anybody is encouraged to write blog posts! Here are some tips:
 
-- Look in the [issues for our blog](https://github.com/jupyter-book/blog/issues?q=sort%3Aupdated-desc+is%3Aissue+is%3Aopen) for things you could blog about.
+- Look in the [issues for our blog](https://github.com/jupyter-book/blog/issues?q=sort%3Aupdated-desc+is%3Aissue+is%3Aopen) for things you could blog about
 - Feel free to blog about any of them!
-- Do so by adding a new markdown file to the `posts/` folder and making a Pull Request.
-- Ping the team for review and editing in Discord.
+- Do so by adding a new markdown file to the folder `posts/current-year`, where `current-year` is the year in which the post is published
+  - Make sure to include at least the following metadata at the top of your markdown file:
+    ```
+    ---
+    title: 
+    date: 
+    authors:
+      - 
+    ---
+    ```
+    You can find detailed information about the metadata in the [MyST authorship guide](https://mystmd.org/guide/authorship). For examples, browse the files in the `posts/` directory.
+
+  - Choose a descriptive file name, as it will become the last part of the page URL. For example, a file named `my-post.md` will be accessible at `https://jupyterbook.org/blog/posts/current-year/my-post`  
+- Make a Pull Request and ping the team for review and editing in Discord
