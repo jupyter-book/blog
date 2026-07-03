@@ -13,7 +13,7 @@ I also started to expand my technical competences and contribute to the Collabor
 
 
 ## Introducing myself to the broader Jupyter Community
-One of the first  things I did was to write a post for the Jupyter Blog [introducing myself and my new role]( https://medium.com/jupyter-blog/becoming-the-new-jupyterhub-and-jupyter-book-community-manager-481d864947d4). As I mentioned there, I am very excited to take on this role and work with all the people involved in JupyterHub and Jupyter Book.
+One of the first things I did was to write a post for the Jupyter Blog [introducing myself and my new role]( https://medium.com/jupyter-blog/becoming-the-new-jupyterhub-and-jupyter-book-community-manager-481d864947d4). As I mentioned there, I am very excited to take on this role and work with all the people involved in JupyterHub and Jupyter Book.
 
 
 ## Getting to know the people and the projects they work on
