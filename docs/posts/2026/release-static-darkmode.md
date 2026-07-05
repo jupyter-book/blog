@@ -1,4 +1,10 @@
-# New release: More reliable static content, dark mode improvements, and more!
+---
+title: "New release: More reliable static content, dark mode improvements, and more!"
+date: 2026-07-06
+license: CC-BY-4.0
+authors:
+  - id: jb-team
+---
 
 We're pleased to announce the latest releases of `mystmd` (v1.10.1) and `myst-theme` (v1.3.1).
 We improved the static asset resolution, the dark mode experience, and the theme experience among others. 
