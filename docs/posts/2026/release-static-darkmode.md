@@ -60,7 +60,7 @@ Thanks to everyone who contributed discussions, ideas, code, and review across t
 [@choldgraf](https://github.com/choldgraf), 
 [@joequant](https://github.com/joequant),
 [@pancakereport](https://github.com/pancakereport), 
-[parmentelat](https://github.com/parmentelat),
+[@parmentelat](https://github.com/parmentelat),
 [@rowanc1](https://github.com/rowanc1),
 [@stefanv](https://github.com/stefanv), and
 [@stevejpurves](https://github.com/stevejpurves). 
