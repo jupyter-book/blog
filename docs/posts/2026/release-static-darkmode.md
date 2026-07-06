@@ -25,7 +25,7 @@ We have also refined theme behavior by [improving logo rendering in dark mode](h
 
 - **Other theme improvements.**
 This release includes several refinements to the user interface that help create a smoother and more polished experience for readers. 
-Among others, we have improve theme behavior by [preventing unnecessary theme-transition animations](https://github.com/jupyter-book/myst-theme/pull/884), reducing visual distractions and making transitions feel more natural. 
+Among others, we have improved theme behavior by [preventing unnecessary theme-transition animations](https://github.com/jupyter-book/myst-theme/pull/884), reducing visual distractions and making transitions feel more natural. 
 We also [fixed vertical height for stacked buttons](https://github.com/jupyter-book/myst-theme/pull/872), ensuring that interactive elements display consistently.
 
 
