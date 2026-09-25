@@ -9,10 +9,8 @@ project:
   plugins:
     # For lists of blog posts
     - https://github.com/jupyter-book/blog-plugin/releases/download/v2.1.0/plugin.mjs
-    # To make issue links render w/ titles
-    - https://github.com/jupyter-book/myst-plugins/releases/download/github-issue-link%402025-12-01/index.mjs
-    # To auto-link github author names
-    - https://github.com/jupyter-book/myst-plugins/releases/download/github-handle-links%402025-12-01/index.mjs
+    # To make issue links render w/ titles and auto-link github author names
+    - https://github.com/myst-contrib/myst-github/releases/download/v0.0.1/index.mjs
     # To turn `:emoji-shortcodes:` into emojis
     - https://raw.githubusercontent.com/jupyter-book/myst-plugins/main/plugins/emoji-shortcodes/emoji-shortcodes.mjs
     # For shared footer
