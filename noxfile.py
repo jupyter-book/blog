@@ -14,6 +14,7 @@ def docs(session):
 
 
 @nox.session(name="docs-live")
+@nox.session(name="docs:live")
 def docs_live(session):
     """Start a live development server for the documentation."""
     session.install("-r", "requirements.txt")
