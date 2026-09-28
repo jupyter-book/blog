@@ -4,7 +4,7 @@ authors:
   - name: Serena Bonaretti  
     github: sbonaretti  
     url: https://sbonaretti.github.io/  
-date: 2026-08-31  
+date: 2026-09-30  
 license: CC-BY-4.0  
 --- 
 
