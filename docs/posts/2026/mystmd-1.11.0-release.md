@@ -1,67 +1,63 @@
 ---
-title: "New release MyST 1.11.0: Improved Rendering, Builds, and Documentation"
+title: "New release: stable notebook cell links, figure grids, and new hooks for theme developers"
 date: 2026-09-24
 license: CC-BY-4.0
 authors:
   - id: jb-team
 ---
 
-We've just released [**mystmd 1.11.0**](https://github.com/jupyter-book/mystmd/releases/tag/mystmd%401.11.0) and [**myst-theme 1.4.1**](https://github.com/jupyter-book/myst-theme/releases#release-myst-to-react@1.4.1)! 
-Here are some of the bigger improvements and fixes that we made!
+We've just released [**mystmd 1.11.0**](https://github.com/jupyter-book/mystmd/releases/tag/mystmd%401.11.0) and [**myst-theme 1.4.1**](https://github.com/jupyter-book/myst-theme/releases/tag/myst-to-react%401.4.1)!
+Here are some of the bigger improvements and fixes that we made.
 
-## What's new
+## For authors
 
-- **New HTML Rendering Pathway**.
-This release introduces a [new `html` rendering pathway](https://github.com/jupyter-book/mystmd/pull/3027), providing a more direct way to produce HTML output from MyST projects.
-We’ve also added a [public manifest to site builds](https://github.com/jupyter-book/mystmd/pull/3002), making it easier for downstream tools and deployments to identify publicly available project files.
-- **Improved Build Performance and Infrastructure**.
-We’ve made several improvements to the build system, including
-switching to a [`.ipynb` build cache](https://github.com/jupyter-book/mystmd/pull/2970) and
-using the [available system parallelism](https://github.com/jupyter-book/mystmd/pull/2957) rather than the total number of CPUs.
-These changes help MyST make better use of available resources during builds.
-- **More Robust MyST Specifications**. The `myst-spec` ecosystem has been streamlined by
-fusing [`myst-spec-ext` into `myst-spec`](https://github.com/jupyter-book/mystmd/pull/2908) and
-generating the [schema as TypeScript](https://github.com/jupyter-book/mystmd/pull/2914).
-We’ve also vendored [`markdown-it-myst-extras` into `markdown-it-myst`](https://github.com/jupyter-book/mystmd/pull/2953), simplifying the dependency structure.
-- **Better Notebook and Document Rendering**.
-This release includes several improvements to rendered content, including
-stable [deep-link anchors for notebook cells](https://github.com/jupyter-book/mystmd/pull/2975),
-support for [figures using grid directives](https://github.com/jupyter-book/mystmd/pull/2899),
-and improved handling of [outputs as subfigures](https://github.com/jupyter-book/mystmd/pull/3059).
-Together, these changes make it easier to create and link to rich, structured content.
-- **More Reliable Cross-References and Metadata**. We’ve improved
-handling of Typst [cross-references containing spaces](https://github.com/jupyter-book/mystmd/pull/3047) and
-relaxed overly aggressive [DOI coercion](https://github.com/jupyter-book/mystmd/pull/2960).
-We’ve also fixed several edge cases involving
-[CSL HTML entities](https://github.com/jupyter-book/mystmd/pull/2986),
-[multi-extension paths such as `.tar.gz`](https://github.com/jupyter-book/mystmd/pull/3045), and
-[Creative Commons license URLs](https://github.com/jupyter-book/mystmd/pull/3044).
-- **Improved Compatibility and Documentation**. This release includes a number of compatibility fixes, including
-[Windows kernel path normalization](https://github.com/jupyter-book/mystmd/pull/3023)
-and updates for [Node 24-compatible GitHub Actions](https://github.com/jupyter-book/mystmd/pull/2905).
-The documentation has also been expanded with new guidance on
-[host customization](https://github.com/jupyter-book/mystmd/pull/3051),
-[documentation plugins](https://github.com/jupyter-book/mystmd/pull/2997),
-[multi-page transforms](https://github.com/jupyter-book/mystmd/pull/2950), and
-[AST structure and metadata](https://github.com/jupyter-book/mystmd/pull/2865),
-as well as improved deployment guidance for
-[GitLab](https://github.com/jupyter-book/mystmd/pull/2966) and
-[GitHub Pages](https://github.com/jupyter-book/mystmd/pull/2990).
+- **Stable links to notebook cells**.
+  Links to a notebook cell (like `page#cell-id`) used to change on every build.
+  MyST now [uses each cell's notebook ID as its anchor](https://github.com/jupyter-book/mystmd/pull/2975), and the theme [supports Jupyter-style `#cell-id=<id>` links](https://github.com/jupyter-book/myst-theme/pull/915), so links to cells keep working across builds.
+- **Grid layouts inside figures**.
+  You can now [put a `{grid}` inside a `{figure}`](https://mystmd.org/guide/figures#control-sub-figure-layout-with-a-grid) for responsive multi-image layouts, like one column on narrow screens and two on wide ones.
+- **Fewer surprise DOI citations**.
+  MyST used to turn any link that ended in a DOI into a citation.
+  Now, [only `doi.org` links are converted](https://github.com/jupyter-book/mystmd/pull/2960), along with raw DOIs and `doi:` links.
+  To keep the old behavior, set [`infer_dois_from_urls: true`](https://mystmd.org/guide/settings#setting-infer-dois-from-urls).
+- **Execution cache stored as notebooks**.
+  MyST now [stores cached execution outputs as `.ipynb` files](https://github.com/jupyter-book/mystmd/pull/2970).
+  If you're debugging a build, you can inspect cached outputs with any notebook viewer.
+  Existing caches still work.
+- **Serve `myst start` on your network**.
+  We've documented how to [run the MyST server on a custom host address](https://mystmd.org/guide/deployment#serving-on-a-network-interface), for example from a container or a remote machine.
+- **Bug fixes**.
+  Figures made from captioned notebook cells [show their images again](https://github.com/jupyter-book/mystmd/pull/3059) (this broke in mystmd 1.7.0).
+  Multi-word glossary terms [no longer break Typst PDF export](https://github.com/jupyter-book/mystmd/pull/3047).
+  On Windows, notebooks now [execute from their own folder](https://github.com/jupyter-book/mystmd/pull/3023), so relative file paths work.
+
+## For developers building on MyST
+
+These changes are for people building themes, templates, or other tools on top of MyST.
+They don't change anything for authors yet.
+
+- **A new HTML rendering pathway for themes**.
+  A theme can now [declare its own render command](https://github.com/jupyter-book/mystmd/pull/3027) for `myst build --html`.
+  If it does, `mystmd` runs that command instead of starting a server and crawling every page, so a theme could use a static site generator approach.
+- **A manifest of public files**.
+  Site builds now [include a `public.json` file](https://github.com/jupyter-book/mystmd/pull/3002) that lists the files under `public/`, so themes can build static sites without file-system access to the site content.
+- **New developer documentation**.
+  We added a guide to [the MyST AST structure and metadata](https://github.com/jupyter-book/mystmd/pull/2865) and documented how a plugin can [aggregate information across multiple pages](https://github.com/jupyter-book/mystmd/pull/2950), like a site-wide glossary.
 
 ## Changelogs
 
-You can also read about this release at [jupyterbook.org/releases](https://jupyterbook.org/releases). 
+You can also read about this release at [jupyterbook.org/releases](https://jupyterbook.org/releases).
 For more details, see
-[mystmd release notes](https://github.com/jupyter-book/mystmd/releases/tag/mystmd%401.11.0) 
-and 
-[myst-theme release notes](https://github.com/jupyter-book/myst-theme/releases#release-myst-to-react@1.4.1).
+[mystmd release notes](https://github.com/jupyter-book/mystmd/releases/tag/mystmd%401.11.0)
+and
+[myst-theme release notes](https://github.com/jupyter-book/myst-theme/releases/tag/myst-to-react%401.4.1).
 
 ## Upgrade notes
 
-- To upgrade `mystmd`:   
+- To upgrade `mystmd`:
     `npm install -g mystmd` (or `pip install -U mystmd`)
 
-- To upgrade `myst-theme`:   
+- To upgrade `myst-theme`:
      Delete `_build`; it will be downloaded again during the next build.
 
 ## Try it out!
@@ -76,9 +72,7 @@ Thanks to everyone who contributed discussions, ideas, code, and review across t
 [@bsipocz](https://github.com/bsipocz),
 [@choldgraf](https://github.com/choldgraf),
 [@ciyer](https://github.com/ciyer),
-[@claude](https://github.com/claude),
 [@coretl](https://github.com/coretl),
-[@cursoragent](https://github.com/cursoragent),
 [@Darshan808](https://github.com/Darshan808),
 [@DobbiKov](https://github.com/DobbiKov),
 [@dylanpulver](https://github.com/dylanpulver),
