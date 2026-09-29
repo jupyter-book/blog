@@ -79,4 +79,4 @@ Format each highlight as a bold title followed by short sentences, one per line.
 - **Say who it's for.** Make it clear if something is for authors or for developers building on MyST. If a feature isn't usable by authors yet, mention this in the notes.
 - **Be specific.** "Run the MyST server on a custom host address" is better than "host customization".
 - **Say why it is useful.** Clarify why each highlight is useful, the problem it is meant to solve, or the new functionality it's meant to enable.
-- **Link words, not PR numbers.** Write "a new [`children` option](link)", not "[#2705](link)". Link to documentation when it exists.
+- **Link words, not PR numbers.** Write `a new [children option](url)`, not `[#2705](url)`. Link to documentation when it exists.
