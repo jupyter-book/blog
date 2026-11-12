@@ -25,9 +25,13 @@ site:
 ## For authors
 
 - **Breadcrumbs in the book theme**.
-  Pages now [show a breadcrumb trail](https://myst-theme.netlify.app/ui#breadcrumbs) above the title, like `🏠 › Reference › Admonitions`.
+  Pages now [show a breadcrumb trail](https://myst-theme.netlify.app/ui#breadcrumbs) above the title, like `🏠 › Visual Reference › Admonitions`.
   It follows the nesting of your table of contents, so readers can see where they are in the context of your book or documentation.
   You can turn it off with `site.options.hide_breadcrumbs: true`.
+
+  ```{figure} ./images/myst-theme-2-breadcrumbs.png
+  Breadcrumbs above the page title on the [myst-theme demo site](https://myst-theme.netlify.app/reference/admonitions).
+  ```
 - **Redirects for moved pages**.
   If you rename or move a page, you can now [redirect the old URL to the new one](https://myst-theme.netlify.app/permalinks#redirects) with `site.options.redirects`, so old links keep working (only in the book theme for now).
 - **WebM videos**.
