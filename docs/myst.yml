@@ -47,3 +47,5 @@ site:
   options:
     folders: true
     analytics_plausible: jupyterbook.org
+    redirects:
+      - /posts/2026/2026-11-os4ls -> /posts/2026/os4ls-grant-myst-for-ai
