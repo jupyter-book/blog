@@ -22,7 +22,7 @@ jobs:
       - uses: actions/configure-pages@v3
       - uses: actions/setup-node@v4
         with:
-          node-version: lts
+          node-version: lts/*
       - name: Install MyST Markdown
         run: npm install -g mystmd
       - name: Build the site
